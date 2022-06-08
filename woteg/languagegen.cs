@@ -11,7 +11,7 @@ namespace politicsgame
 {
     class languagegen
     {
-        public static void langgen()
+        public string langgen()
         {
             Random random = new Random();
             char[] consonants = { 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z' };
@@ -41,6 +41,7 @@ namespace politicsgame
                 word2 += newword[i];
             }
             Console.WriteLine(word2);
+            return word2;
         }
     }
 }
