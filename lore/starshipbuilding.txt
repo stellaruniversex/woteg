@@ -1,0 +1,13 @@
+--THE DIFFICULTIES OF STARSHIP CONSTRUCTION--
+
+Published by the Galactic Survey Agency
+
+-- LIMITATIONS OF SPACE ELEVATORS --
+
+Nearly all spaceships, except for those made in orbital starship factories, have to be built on ground in terrestrial airdocks, then transported by space elevator to a particular altitude, after which the spaceship leaves automatically on its own power. This sets a limit on how heavy a spaceship can be, and the heaviest space elevators are rated to only 400,000 tonnes, and all serious ground-launched spaceship designs are under 400,000 tonnes.
+
+Space stations also have a limit to how fast they can move, with a maximum of 250 km/h for the newest space elevators, and as little as 50 km/h for ones built before the Third Empire. This limits the output of a single airdock to 200-320 ships/year for advanced elevators, and 40-60 ships/year for older elevators.
+
+Space stations, however, often run into the millions of tonnes. When colonization of new regions is done quickly, this results in nearly all space elevators being occupied by station segments, sometimes for several years.
+
+Large manufacturing facilities have dozens of space elevators, and the largest number of them is found at the Veleth Averael factory, with 292 space elevators capable of outputting a maximum 81,760 ships (or station segments) per year, though 65,000 ships/year is more common. Smaller ships can be launched on large space elevators as a group of several ships, the standard for Interexp-class and variant ships is 12 ships on a platform.

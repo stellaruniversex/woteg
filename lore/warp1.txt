@@ -1,0 +1,106 @@
+Revised FTL drives (they get too fast too quickly right now)
+-----------------------------------
+Tier 1 - 1-6 c (25,000 years)
+Warp 1, end Information Age/Tech 11
+-----------------------------------
+Tier 2 - 6-36 c (4,200 years)
+Warp 2, mid Warp Age/Tech 12
+-----------------------------------
+Tier 3 - 36-216 c (694 years)
+Warp 3, late Warp Age/Tech 12
+-----------------------------------
+Tier 4 - 216-1296 c (115 years)/Trav Jump-1 to Jump-7
+Warp 4, early Hyper Age/Tech 13
+-----------------------------------
+Tier 5 - 1296-7776 c (20 years)/Trav Jump-7 to Hop-5
+Hyperlane 1, early Hyper Age/Tech 13
+Warp 5, early Jump Age/Tech 15
+-----------------------------------
+Tier 6 - 7776-47K c (3.2 years)/Trav Hop-5 to Skip-3
+Hyperlane 2, early Sentient Age/Tech 17
+Warp 6, mid-late Sentient Age/Tech 19
+Jump 1, early Jump Age/Tech 15
+-----------------------------------
+Tier 7 - 47K-280K c (6.5 months/196 days)/Trav Skip-3 to Leap-2
+Hyperlane 3, late Stellar Age/Tech 23
+Warp 7, late Wormhole Age/Tech 26 (Warp 6-7 at tech 25)
+Jump 2, early Stellar Age/Tech 21
+-----------------------------------
+Tier 8 - 280-1680K c (33 days)/Trav Leap-2 to Bound-1
+Hyperlane 4, early Mega Age/Tech 27
+Warp 8, mid Galactic Age/Tech 31
+Jump 3, mid Wormhole Age/Tech 25
+-----------------------------------
+Tier 9 - 1680K-10.1M c (5.5 days)/Trav Bound-1 to Bound-6 
+Hyperlane 5, early Galactic Age/Tech 30
+Warp 9, late Vacuum Age/Tech 35
+Jump 4, mid Mega Age/Tech 28
+Wormhole 1, early Wormhole Age/Tech 24
+-----------------------------------
+Tier 10 - 10.1M-60.5M c (22 hours)/Trav Bound-6 to Vault-4
+Hyperlane 6, mid Vacuum Age/Tech 34
+Warp 10, early Intergalactic Age/Tech 39
+Jump 5, mid Galactic Age/Tech 31
+Wormhole 2, mid Wormhole Age/Tech 25
+-----------------------------------
+Tier 11 - 60.5M-363M c (217 minutes)/Trav Vault-4 to Six-2
+Hyperlane 7, late Cluster Age/Tech 38
+Warp 11, early Dimensional Age/Tech 42
+Jump 6, early Vacuum Age/Tech 33
+Wormhole 3, late Wormhole Age/Tech 26
+-----------------------------------
+Tier 12 - 363M-2177M c (36 minutes)/Trav Six-2 to Seven-1
+Hyperlane 8, late Intergalactic Age/Tech 41
+Warp 12, early Supercluster Age/Tech 45
+Jump 7, late Vacuum Age/Tech 35
+Wormhole 4, early Mega Age/Tech 27
+-----------------------------------
+Tier 13 - 2177M-13.1B c (6 minutes)/Trav Seven-1 to Eight-1
+Hyperlane 9, mid Dimensional Age/Tech 43
+Warp 13, early Reality Age/Tech 48
+Jump 8, mid Cluster Age/Tech 37
+Wormhole 5, mid Mega Age/Tech 28
+-----------------------------------
+Tier 14 - 13.1B-78.4B c (1 minute)/Trav Eight-1 to Eight-5
+Hyperlane 10, early Supercluster Age/Tech 45
+Warp 14, late Reality Age/Tech 50
+Jump 9, mid Intergalactic Age/Tech 40
+Wormhole 6, late Mega Age/Tech 29
+-----------------------------------
+Tier 15 - 78.4B-470B c (10 seconds)/Trav Eight-5 to Nine-3
+Hyperlane 11, early Reality Age/Age 48
+Warp 15, mid Origin Age/Tech 52
+Jump 10, mid Dimensional Age/Tech 43
+Wormhole 7, mid Galactic Age/Tech 31
+-----------------------------------
+Tier 16 - 470B-2821B c (1.7 seconds)
+Hyperlane 12, early Origin Age/Tech 51
+Warp 16, early Universal Age/Tech 54
+Jump 11, mid Supercluster Age/Tech 46
+Wormhole 8, early Vacuum Age/Tech 33
+-----------------------------------
+Tier 17 - 2821B-16.9T c (275 miliseconds)
+Hyperlane 13, early Universal Age/Tech 54
+Warp 17, early Superreality Age/Tech 57
+Jump 12, mid Reality Age/Tech 49
+Wormhole 9, early Cluster Age/Tech 36
+-----------------------------------
+Tier 18 - 16.9T-102T c (46 miliseconds)
+Hyperlane 14, early Superreality Age/Tech 57
+Warp 18, mid Multiversal Age/Tech 61
+Jump 13, mid Origin Age/Tech 52
+Wormhole 10, early Intergalactic Age/Tech 39
+-----------------------------------
+Tier 19 - 102T-609T c (7.6 miliseconds)
+Hyperlane 15, early Multiversal Age/Tech 60
+Warp 19, Age of Ascension/Tech 64
+Jump 14, mid Universal Age/Tech 55
+Wormhole 11, early Dimensional Age/Tech 42
+-----------------------------------
+Tier 20 - 609T-3656T c (1.3 miliseconds)
+Hyperlane 16, Age of Ascension/Tech 64
+Warp 20, Beyond/Tech 67
+Jump 15, late Superreality Age/Tech 59
+Wormhole 12, mid Supercluster Age/Tech 46
+
+the most advanced FTL drive in use in major states is Warp 5-3 (38.6 years) and Jump 1-2 (9.6 years), both available at tech 16, across the Known Galaxy as of 32108, the most advanced FTL drive in use (tech 18) is Hyperlane 2-2 (9.65 years), Warp 5-6 (19.3 years) and Jump 1-4 (4.82 years). the most advanced FTL drive used by the Second Empire (27301) was Hyperlane 4-6 (32.6 days), Warp 7-4 (293.3 days), Jump 4-4 (16.3 days) and Wormhole 5-1 (36 minutes, but *very* difficult to build)

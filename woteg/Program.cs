@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using System.Runtime;
 using System.Threading;
+using static woteg.languagegen;
 /*    1     2    3    4    5    6    7    8    9   10   11   12
   -------------------------------------------------------------
 O |300 |360 |450 |600 |800 |1100|1400|1800|2500|4000|8000|9999| - 30 M-sun (12 age O-class star is 1,600,000,000 km in diameter, and more of a M-class supergiant)
@@ -32,7 +33,7 @@ Silicon - used in semiconductors, found on all non-icy planets (+2 silicate, +0 
 Uranium - basic fission fuel, found on all non-icy planets but most abundant in young ones (+3 for age 1, +1 for age 2, +0 for 3-4, then decreasing by 1 for each 2 billion years of age, min 1
 Thorium - stable fission fuel, found on all non-icy planets but most abundant in young ones (+3 for age 1-2, +2 for age 3-5, +1 for age 6-9, +0 for age 10-12), min 1
 Plutonium - powerful fission fuel, found on very young non-icy planets
-Lithium - used in ionic form for batteries, found on all non-icy planets, mostly hot ones
+Lithium - used in ionic form for batteries, found on all non-icy planets, mostly hot ones (+2 if temperature 11-14)
 Helium-3 - non-radioactive fusion fuel, found mostly in gas giants (+8), also on moons (+2)
 Iridium - advanced material for fusion reactors and plasma weapons, rare and found mostly on cold (t < 8) and young (age < 4) non-icy planets (+4, -1 for each billion years of age, up to +0 for 5 billion years)
 you'll notice a pattern... you won't find any of these on icy planets!*/
@@ -93,25 +94,34 @@ namespace woteg
             int stargen = 0;
             int starclass = 0;
             int planetnum = 0;
+            int[,] diameter = new int[7, 12];
             char input = ' ';
             Random rand = new Random();
             StarSystem star = new StarSystem();
             StarSystem[] starsystem = new StarSystem[16384];
-            Planet[,] planets = new Planet[16384,20]; // 16384 star systems, 20 planets
+            Planet[,] planets = new Planet[16384, 20]; // 16384 star systems, 20 planets
             Console.OutputEncoding = Encoding.Unicode;
+            getDiameters(diameter); // preload minimum diameter
             Console.WriteLine("WAR OF THE EIGHT GALAXIES");
             Console.WriteLine("STAR SYSTEM GENERATOR");
             Console.WriteLine("Note: this is a test! Generates one star system only!!!");
             Console.WriteLine("In the final WotEG, these systems will be generated procedurally in chunks, to prevent system overload.");
             Console.WriteLine("The whole galaxy would be over 100 gigabytes in size if it had to be rendered in full!");
-            tmod = rand.Next(256);
-            Console.WriteLine("{0}", tmod);
+            //tmod = rand.Next(256);
+            //Console.WriteLine("{0}", tmod);
             Console.WriteLine("Type 1 to begin generation.");
+            //for (int i = 0; i < 12; i++)
+            //{
+            //    Console.Write("{0} ", diameter[1, i]);
+            //}
             char.TryParse(Console.ReadLine(), out input);
             switch (input)
             {
                 case '1':
-                    starGenerator();
+                    starGenerator(star);
+                    //Console.WriteLine(star.getStarClass());
+                    Console.WriteLine(star.getName());
+                    Console.WriteLine(star.getAge());
                     break;
                 default:
                     Console.WriteLine("Invalid input, try again");
@@ -140,9 +150,37 @@ namespace woteg
             //    Console.Write("\n");
             //}
         }
-        public static void starGenerator() // it begins...
+        public static void getDiameters(int[,] diameters)
         {
-
+            int n = 0;
+            string[] lines = File.ReadAllLines("age.txt");
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(' ');
+                for (int i = 0; i < parts.Length; i++) diameters[n, i] = int.Parse(parts[i]);
+                n++;
+            }
+        }
+        public static void starGenerator(StarSystem star) // it begins...
+        {
+            string name;
+            int stargen;
+            int starclass;
+            star.setName(langgen());
+            Random rand = new Random();
+            stargen = rand.Next(1, 101);
+            {
+                if (stargen == 1) starclass = 6;
+                else if (stargen >= 2 && stargen <= 3) starclass = 5;
+                else if (stargen >= 4 && stargen <= 6) starclass = 4;
+                else if (stargen >= 7 && stargen <= 10) starclass = 3;
+                else if (stargen >= 11 && stargen <= 20) starclass = 2;
+                else if (stargen >= 21 && stargen <= 40) starclass = 1;
+                else starclass = 0;
+            }
+            star.setStarClass(starclass);
+            stargen = rand.Next(1, 13); // age
+            star.setAge(stargen);
         }
     }
 }

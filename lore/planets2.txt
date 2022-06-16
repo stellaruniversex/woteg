@@ -1,0 +1,64 @@
+--THE CAPITALS OF THE KNOWN GALAXY--
+Published by the Galactic Survey Agency
+Last updated 32108 CE (684 Third Empire)
+
+Biome key:
+Some biomes are merged for simplicity:
+Tropical forest - tropical rainforest, tropical seasonal forest (wet savanna) and tropical grassland (dry savanna)
+Hot desert - hot desert, hot shrubland
+Temperate forest - temperate forest, temperate rainforest, temperate grassland
+Cold desert - cold desert, cold shrubland
+Boreal forest - mixed forest, taiga
+Tundra - tundra, ice desert
+
+-CAPILIA-
+Capital of the Empire of Asteria/the Third Empire
+Planet type: iron-silicate
+Diameter: 11,285 km
+Average temperature: 292 K (19 °C)
+Mass: 0.89 Dahanno
+Gravity: 0.95 g
+Atmosphere: 0.96 atm, nitrogen-oxygen
+Native life level: 16
+Water cover: 73%
+Land area: 108,000,000 km^2
+Biomes: 16% tropical forest, 14% hot desert, 36% temperate forest, 4% cold desert, 18% boreal forest, 6% tundra, 6% urban
+
+Population: 224,065,374,922 (224 billion)
+Tech level: 16 (Late Jump Age)
+Largest city: Capital (population 3,565,062,644)
+GDP: $11,913,107,853,852,896 ($11.91 quadrillion)
+GDP per capita: $53,168
+Main industries: Administration
+
+Capilia is one of the oldest continuously settled planets, having been populated mainly by descendants of Augustia since 2486 CE, during the First Empire. In the last years of the Second Empire, it became part of the Capilian Democratic Republic, which existed for around 220 years (-4795 - -4578 TE) until the chaos of the Second Empire's collapse caused Capilia to disintegrate into warring factions as well.
+
+-VASKANA-
+Capital of the State of Raaka
+Planet type: iron-silicate
+Diameter: 12,500 km
+Average temperature: 296 K (23 °C)
+Mass: 1.0x Dahanno
+Gravity: 1.0 g
+Atmosphere: 1.02 atm, nitrogen-oxygen
+Native life level: 16
+Water cover: 67%
+Land area: 162,030,000 km^2
+Biomes: 66% tropical forest, 5% hot desert, 10% temperate forest, 19% urban
+
+Population: 1,073,065,892,764 (1.07 trillion)
+Tech level: 16 (Late Jump Age)
+Largest city: Qanna Alatar (population 56,090,285,380)
+GDP: $49,709,777,482,292,300 ($49.71 quadrillion)
+GDP per capita: $46,325
+Main industries: Finance, Iridium Mining
+
+The story of Vaskana rising from a minor regional center to the most populous planet in the Known Galaxy is remarkable in its own right, involving its strategic position between Dahanno, Elvon and most importantly the rising Empire of Khaldaar, the discovery of huge iridium deposits left by the Second Empire, and a decisive decision by the High Governor. 1,000 years ago, Vaskana was a frontier planet, with less than 20 million people. 500 years ago, its population was still less than 1 billion, 250 years ago, it was a regional center with a population of 40 billion, today 1 trillion call it home.
+
+The largest city, Qanna Alatar, covers 43,000 km^2 and is one of the newer cities, founded just 60 years ago when the city of Ilar Alatar, already the largest city in Vaskana at 10 billion people, annexed 322 smaller cities with a total population of 18 billion. Unregulated growth resulted in the destruction of what little green area remained, to the point that the city authorities had to clear 1,000 km^2 of urbanized area just to build city parks.
+
+There are 1,386,757,962 officially registered buildings in Qanna Alatar, but the uncontrolled growth means the real number is more likely around 1,800,000,000. The center of old Alatar is home to the tallest building in the Known Galaxy, the Monument to the Sky, at 5,043 m tall, which doesn't house any people. The extreme height means maintenance workers have to wear pressure suits. The tallest inhabited buildings are part of the Cloud City - eight self-contained city buildings 3,600 m tall, housing 1 million people each. 263 buildings are over 2,500 m tall, 1,782 are over 2,000 m tall, 45,039 are over 1,500 m tall, and at least 746,000 are over 1,000 m tall.
+
+Many people in Qanna Alatar live their entire lives without ever being on the ground, as everything needed for a daily living is available above-ground, millions of skybridges allow people to traverse buildings without needing to descend, and the metro system is as multi-layered as the city itself. In many urban centers, the ground floor teems with organized crime, dangerous infrastructure and galaxy-wide banned businesses, even the heavily militarized police fears to go there. Yet, billions also live underground as housing overground has become unaffordable, risking the underground's own dangers just to have access to the city's unlimited variety of goods and services. In other, smaller megacities, around 100 of which are themselves home to over 1 billion people, a similar situation stands there.
+
+Despite the unstoppable growth of Vaskana's megacities, there remain around 1,000,000 smaller cities and towns that house around 200 billion of Vaskana's people.

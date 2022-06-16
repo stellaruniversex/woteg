@@ -1,0 +1,149 @@
+--STANDARD TECHNOLOGICAL IDENTIFICATION LIST--
+Seventh Edition, 32105 CE
+
+Published by the Galactic Survey Agency, a non-profit agency dedicated to all statistics relevant to the Known Galaxy, and beyond
+
+The Standard Technological Identification List is the most common measurement system of tech levels across the Known Galaxy, used to measure advancement of civilizations of all kinds.
+
+When first developed in 2455 CE, it had 18 levels, with the most advanced First Empire tech being at level 13, and anything above being theoretical technology still in development or even only in research. In the first edition, the Warp Age was at tech 10, as the Modern Age and the Late Medieval Age were respectively part of the Industrial Age and the Medieval Age, only in the Third Edition were they separated.
+
+These are the names for the 18 tech levels in the First Edition of the STIL:
+1 - Bronze Age (3000 BCE-1500 BCE)
+2 - Iron Age (1500 BCE-500 BCE)
+3 - Classical Age (500 BCE-500 CE)
+4 - Medieval Age (500-1500 CE)
+5 - Gunpowder Age (1500-1700 CE)
+6 - Enlightenment Age (1700-1800 CE)
+7 - Industrial Age (1800-1940 CE)
+8 - Atomic Age (1940-2000 CE)
+9 - Information Age (2000-2093 CE)
+10 - Warp Age (2093-2185 CE)
+11 - Early Hyper Age (2185-2265 CE)
+12 - Late Hyper Age (2265-2345 CE)
+13 - Early Jump Age (2345-2455 CE)
+14 - Late Jump Age (2455-2605 CE)
+15 - Sentient Age (2605-2940 CE)
+16 - Starlifting Age (2940-3150 CE)
+17 - Wormhole Age (3150-3315 CE)
+18 - Megastructure Age (3315+ CE)
+
+The time periods for after the Early Jump Age were estimates based on then-current rates of advancement. Instead, after the exhaustion of many deposits, the First Empire's economy stagnated, and technology stagnated too at tech 16 (14 in 1st STIL) until the First Empire's collapse in 3150 CE. Most planets fell in the ensuing Interregnum to tech 12 or 13 (10-11 in 1st STIL) afterward, if they could survive at all, as many planetary settlements depended on life support to keep them habitable, without interstellar trade they could not maintain them, and eventually fell apart, with the death of their inhabitants.
+
+Only a handful of planets maintained the relatively high tech levels of the First Empire, having enough resources and manufacturing capacity to be self-sufficient in the multi-millennia long chaos of the Interregnum. These "stable nuclei" were the seeds from which proto-imperial states would intermittently form, eventually resulting in the formation of the Second Empire, the longest-lasting, most powerful and most advanced polity to be thoroughly studied.
+
+Under the Second Empire, the STIL was revised twice, first to 24 tech levels while maintaining the levels of the first STIL, and then to 32 levels, with more granular levels and two extra pre-warp levels.
+
+Second Edition STIL:
+1 - Bronze Age
+2 - Iron Age
+3 - Classical Age
+4 - Medieval Age
+5 - Gunpowder Age
+6 - Enlightenment Age
+7 - Industrial Age
+8 - Atomic Age
+9 - Information Age
+10 - Warp Age (-250 SE)
+11 - Early Hyper Age (-100 SE)
+12 - Late Hyper Age (1 SE)
+13 - Early Jump Age (50 SE)
+14 - Late Jump Age (110 SE)
+15 - Sentient Age (180 SE)
+16 - Superintelligent Age
+17 - Starlifting Age
+18 - Wormhole Age
+19 - Megastructure Age
+20 - Ringworld Age
+21 - Galactic Age
+22 - Vacuum Age
+23 - Intergalactic Age
+24 - Dimensional Age
+
+The Third Edition added eight extra levels, including two pre-warp levels and six extra granular levels, forming the basic layout, if not precisely the style, of the STIL up to tech 26.
+
+1 - Bronze Age
+2 - Iron Age
+3 - Classical Age
+4 - Early Medieval Age
+5 - Late Medieval Age
+6 - Gunpowder Age
+7 - Enlightenment Age
+8 - Industrial Age
+9 - Modern Age
+10 - Atomic Age
+11 - Information Age
+12 - Warp Age (-250 SE)
+13 - Early Hyper Age (-100 SE)
+14 - Late Hyper Age (1 SE)
+15 - Early Jump Age (50 SE)
+16 - Late Jump Age (110 SE)
+17 - Early Sentient Age (180 SE)
+18 - Late Sentient Age (360 SE)
+19 - Early Superintelligent Age (550 SE)
+20 - Late Superintelligent Age
+21 - Early Starlifting Age
+22 - Mid Starlifting Age
+23 - Late Starlifting Age
+24 - Early Wormhole Age
+25 - Mid Wormhole Age
+26 - Late Wormhole Age
+27 - Megastructure Age
+28 - Ringworld Age
+29 - Galactic Age
+30 - Vacuum Age
+31 - Intergalactic Age
+32 - Dimensional Age
+
+The Fourth Edition gave granular levels to all single-level tech ages even though no advancements were specified for those periods, increasing the number of tech levels to 44, and setting the current names for technology periods.
+
+
+1 - Bronze Age
+2 - Iron Age
+3 - Classical Age
+4 - Early Medieval Age
+5 - Late Medieval Age
+6 - Gunpowder Age
+7 - Enlightenment Age
+8 - Industrial Age
+9 - Modern Age
+10 - Atomic Age
+11 - Information Age
+12 - Warp Age
+13 - Early Hyper Age
+14 - Late Hyper Age
+15 - Early Jump Age
+16 - Late Jump Age
+17 - Early Sentient Age
+18 - Mid Sentient Age
+19 - Mid-late Sentient Age
+20 - Late Sentient Age
+21 - Early Stellar Age
+22 - Mid Stellar Age
+23 - Late Stellar Age
+24 - Early Wormhole Age
+25 - Mid Wormhole Age
+26 - Late Wormhole Age
+27 - Early Mega Age
+28 - Mid Mega Age
+29 - Late Mega Age
+30 - Early Galactic Age
+31 - Mid Galactic Age
+32 - Late Galactic Age
+33 - Early Vacuum Age
+34 - Mid Vacuum Age
+35 - Late Vacuum Age
+36 - Early Cluster Age
+37 - Mid Cluster Age
+38 - Late Cluster Age
+39 - Early Intergalactic Age
+40 - Mid Intergalactic Age
+41 - Late Intergalactic Age
+42 - Early Dimensional Age
+43 - Mid Dimensional Age
+44 - Late Dimensional Age
+
+--TECHNOLOGICAL COLLAPSE--
+A technological collapse occurs when a planet is unable to sustain, with its current resources available locally and traded for, its technology level. The planet may lose its advanced technology suddenly through a catastrophic event, or more gradually as its advanced technology falls apart without the required maintenance, and the planet falls to a tech level it can sustain with currently available resources. This is what happened to the First Empire as its relatively small exploited deposits were exhausted in the 29th century, reducing its military and economic capacity, causing a technological stagnation, and later the collapse of the First Empire in 3150 CE.
+
+The same may have happened to the Second Empire, with far more brutal consequences because of how advanced the Second Empire was, as high technology generally requires high technology to maintain itself. With the collapse of interstellar trade caused by inter-ethnic conflicts within the Empire, resource shipments were disrupted or even halted, limiting the capability to maintain advanced technology, and causing a vicious cycle that led to the loss of advanced technology, which reduced the ability to maintain remaining technology, which caused further loss of technology, and so on until the planets reached a stable, much lower tech level. Such a spiral is usually inescapable, and can destroy a sufficiently advanced state in mere decades.
+

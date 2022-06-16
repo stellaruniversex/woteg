@@ -1,0 +1,56 @@
+-- MISCELLANEOUS ITEMS --
+
+-Advanced Electronics-
+
+--Quantum Computer I-- (CONTRABAND)
+Weight: 10.00 t
+Volume: 5.00 m^3
+Value: $6,880,000 (base)
+Tech Level: 11
+Description: This is a basic quantum computer, in the 1,000 qubit range. Despite its limited qubits, it can still do powerful calculations that would take millions of years for a normal computer, such as protein folding or neural networks. Outside of the Federation of Dahanno, which produces and sells low-level quantum computers to any customer, quantum computers are stricly limited to the military, and occasional patrols monitor the core for any personal or private possession and work to destroy any private QCs in controlled territory.
+
+--Quantum Computer II-- (CONTRABAND)
+Weight: 10.00 t
+Volume: 5.00 m^3
+Value: $9,514,000 (base)
+Tech Level: 12
+Description: This is an entry-level quantum computer, in the 10,000 qubit range. Increased qubits allow parallel computing, increasing the efficiency of quantum calculations . Outside of the Federation of Dahanno, which produces and sells low-level quantum computers to any customer, quantum computers are stricly limited to the military, and occasional patrols monitor the core for any personal or private possession and work to destroy any private QCs in controlled territory.
+
+--Quantum Computer III-- (CONTRABAND)
+Weight: 10.00 t
+Volume: 5.00 m^3
+Value: $18,157,000 (base)
+Tech Level: 13
+Description: This is a mid-range quantum computer, in the 100,000 qubit range. These quantum computers can do small-scale reality simulations, up to 1 meter in size, and put all regular computers combined on a planet to shame. Quantum computers of this level are stricly limited to the military, and occasional patrols monitor the core for any personal or private possession and work to destroy any private QCs in controlled territory.
+
+--Quantum Computer IV-- (CONTRABAND)
+Weight: 10.00 t
+Volume: 5.00 m^3
+Value: $40,302,000 (base)
+Tech Level: 14
+Description: This is a high-end quantum computer, in the 1,000,000 qubit range. These quantum computers can control the activity of an entire space fleet, coordinating and managing the light delay. Quantum computers of this level are stricly limited to the military, and occasional patrols monitor the core for any personal or private possession and work to destroy any private QCs in controlled territory.
+
+-Ultra-Valuable Commodities-
+
+These items are extremely valuable, but don't have much practical use beyond decoration or maybe academic. They are legal to buy and sell in any empire.
+
+--Transcendence Crystals--
+Weight: 0.01 t
+Volume: 0.01 m^3
+Value: $84,290,000 (base)
+Description: These transcendence crystals glow with a bright purple light, with what appears to be the lore of whoever created the crystal engraved within its mysterious structure. The name is given only due to their appearance and apparent incredible power. Attempts to analyze these crystals beyond a surface analysis have invariably caused their destruction, but it is believed only a civilization with godlike power could produce them.
+Uses: none!
+
+--First Empire Artifact--
+Weight: 0.1 t
+Volume: 0.03 m^3
+Value: $656,925,000 (base)
+Description: This is an artifact from the First Empire (2396-3150 CE), the first major organized human polity in the Known Galaxy. While some First Empire artifacts can be sold for over $1 billion, this one is of slightly lesser value.
+Uses: none!
+
+--Kingdom of the Dawn Artifact--
+Weight: 0.1 t
+Volume: 0.03 m^3
+Value: Priceless!!! ($1,330,850,000,000 (base))
+Description: This is an artifact from the Kingdom of the Dawn, a mysterious non-human empire that stretched across the entire galaxy. They cannot be sold, as no dealer can handle the shock of seeing such a valuable item, but the estimated value is over $1 trillion by the few that remained alive after the artifact treatment. They can however be used to repair Dawn ships.
+Uses: Repairing Kingdom of the Dawn ships

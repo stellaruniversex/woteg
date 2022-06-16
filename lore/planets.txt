@@ -1,0 +1,45 @@
+--STANDARD PLANETARY CLASSIFICATION--
+(not to be confused with SCP, which has no relation to planet statistics)
+
+Published by the Galactic Survey Agency, should be perpetually up-to-date
+ 
+For consistency, we will use the standardized abbreviated classification for planets when mentioning examples, in this layout:
+
+Dahanno ACAAAN6-KGA (example)
+
+1st letter (planet type):
+A - iron-silicate
+I - iron
+S - silicate
+C - water/icy
+G - gas planet
+2nd letter (diameter):
+Multiply by 10 for gas planets:
+1 - 1,000 km
+...6 - 6,000 km
+9 - 9,000 km
+A - 10,000 km
+D - 13,000 km
+K - 20,000 km
+3rd letter (temperature):
+1 - 0-45 K
+2 - 45-77 K
+3 - 77-100 K
+4 - 100-125 K
+5 - 125-160 K
+6 - 160-200 K
+7 - 200-240 K
+8 - 240-260 K
+9 - 260-280 K
+A - 280-300 K
+B - 300-320 K
+C - 320-350 K
+D - 350-380 K
+E - 380-425 K
+F - 425-475 K
+G - 475-525 K
+H - 525-575 K
+I - 575-650 K
+J - 650-750 K
+K - 750-900 K
+For temperatures >900 K, advance 1 letter for each 150 K increase in temperature, so a O temp planet would have a temperature of 1350-1500 K, enough to sustain life in liquid silicon. The highest temperature is Z (>3,150 K).

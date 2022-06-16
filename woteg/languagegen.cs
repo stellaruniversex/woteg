@@ -7,11 +7,11 @@ using System.Globalization;
 // generator to generate languages
 // syllable selections currently limited to CV, VC, CVC and VCC
 // generates meaningless, somewhat pronounceable words
-namespace politicsgame
+namespace woteg
 {
     class languagegen
     {
-        public string langgen()
+        public static string langgen()
         {
             Random random = new Random();
             char[] consonants = { 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z' };
@@ -40,7 +40,7 @@ namespace politicsgame
             {
                 word2 += newword[i];
             }
-            Console.WriteLine(word2);
+            //Console.WriteLine(word2);
             return word2;
         }
     }

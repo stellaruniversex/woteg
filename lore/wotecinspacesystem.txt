@@ -1,0 +1,252 @@
+-- a full, example solar system --
+Name: Yaash'thukhoii (only thing not randomly generated)
+Sector (2d): 25, 61
+Location within sector: 97, 66
+Polity: neutral
+Num stars: 2 (M, M/distant)
+
+Star system 1:
+Star class: M
+Star age: 12 (billion years)
+Num planets: 4 (2+2)
+
+-- Planet 1 --
+Distance: 1 (0.05 AU)
+Planet type: silicate
+Diameter: 3000 km
+Mass: 2 (0.1 earth)
+Gravity: 0.2g
+Moons: none
+Tidal locked: yes
+Atmosphere: 3 - 0.15 atm, nitrogen-oxygen
+Temperature: 300 K
+Water: 30% (9-5-1)
+Life: early intelligence - 17 (11+12-2+2-6)
+Population: 2 (100s)
+Features: minor base from P2/M1
+
+-- Planet 2 --
+Distance: 4 (0.3 AU)
+Planet type: gas planet
+Diameter: 200,000 km
+Mass: 20 (6 Jupiter)
+Gravity: irrelevant!
+Moons: 1 major
+Tidal locked: no
+- Moon 1 -
+Distance: 15 - 10-13M km
+Planet type: iron
+Diameter: 6 - 6,000 km
+Mass: 7 - 0.5 Earth
+Gravity: 5 - 0.5 g
+Atmosphere: 3 - 0.15 atm
+Temperature: 9 - 275 K
+Water: 6 - 60% water
+Life: native civilization - 20 (21)
+Intelligent species: mammal
+Tech level: 11 - Information Age
+Population: 10 (10s of billions)
+
+-- Planet 3 --
+Distance: 14 (7-10 AU)
+Planet type: iron
+Diameter: 9 - 9,000 km
+Mass: 9 (0.8 Earth)
+Gravity: 9 - 0.9 g
+Moons: 1 major
+Tidal locked: no
+Atmosphere: 8 (0.65 atm, hydrogen)
+Temperature: 2 (45-77 K)
+Water: completely frozen
+Life: early multicellular - 6
+Population: 2 (100s)
+Features: minor base from P2/M1
+- Moon 1 -
+Distance: 2 (30,000 km)
+Planet type: iron-silicate
+Diameter: 1 (1,000 km)
+Mass: 1 (0.05 Earth)
+Gravity: 1 (0.1 g)
+Tidal locked: yes
+Atmosphere: 2 (0.1 atm, hydrogen)
+Temperature: 2 (45-77 K)
+Water: none
+Life: none
+Population: 2 (100s)
+Features: minor base from P2/M1
+
+-- Planet 4 --
+Distance: 18 (30-45 AU)
+Planet type: silicate
+Diameter: 15 (15,000 km)
+Mass: 14 (2 Earth)
+Gravity: 13 (1.3 g)
+Moons: 1 major
+Tidal locked: no
+Atmosphere: 13 (2 atm, hydrogen)
+Temperature: 2 (45-77 K)
+Water: frozen (subglacial ocean)
+Life: ocean-land plants - 10
+Population: 2 (100s)
+Features: minor base from P2/M1
+- Moon 1 -
+Distance: 4 (60,000 km)
+Planet type: iron-silicate
+Diameter: 4 (4,000 km)
+Mass: 4 (0.25 Earth)
+Gravity: 4 (0.4 g)
+Tidal locked: yes
+Atmosphere: 7 (0.55 atm, hydrogen)
+Temperature: 1 (<45 K)
+Water: (4 (40%)), completely frozen
+Life: early multicellular - 6
+Population: 2 (100s)
+Features: minor base from P2/M1
+--------------------------------------------------------
+Star system 2:
+Star class: M
+Star age: 12 (billion years)
+Num planets: 7 (5+2)
+
+-- Planet 1 --
+Distance: 13 (6 AU)
+Planet type: gas planet
+Diameter: 11 (110,000 km)
+Mass: 11 (100 Earth)
+Gravity: irrelevant!
+Moons: 3 major
+Temperature: 3 (77-100 K)
+Tidal locked: no
+- Moon 1 -
+Distance: 5 (650-850K km)
+Planet type: silicate
+Diameter: 4 (4,000 km)
+Mass: 3 (0.15 Earth)
+Gravity: 3 (0.3 g)
+Tidal locked: yes
+Atmosphere: none
+Temperature: 3 (77-100 K)
+Water: none
+- Moon 2 -
+Distance: 12 (4.5-6M km)
+Planet type: silicate
+Diameter: 3 (3,000 km)
+Mass: 2 (0.1 Earth)
+Gravity: 2 (0.2 g)
+Tidal locked: yes
+Atmosphere: none
+Temperature: 3 (77-100 K)
+Water: none
+- Moon 3 -
+Distance: 13 (6M-8M km)
+Planet type: silicate
+Diameter: 9 (9,000 km)
+Mass: 8 (0.7 Earth)
+Gravity: 7 (0.7 g)
+Tidal locked: yes
+Atmosphere: 7 (0.55 atm, methane)
+Temperature: 3 (77-100 K)
+Water: 7 (70%, methane)
+Life: 18 (developed intelligence)
+Curiosities: Out-of-Place Life (non-water life base, life level >= 16)
+
+-- Planet 2 --
+Distance: 3 (0.15 AU)
+Planet type: iron
+Diameter: 11 (11,000 km)
+Mass: 10 (1.1 Earth)
+Gravity: 10 (1.0 g)
+Moons: 1 major
+Tidal locked: no
+Atmosphere: 17 (6 atm) -> 27 (190 atm)
+Temperature: 9 (270 K) -> 19 (700 K) - RUNAWAY GREENHOUSE
+Water: none
+Life: none
+-- Moon 1 --
+
+-- Planet 3 --
+Distance: 5 (0.4 AU)
+Planet type: iron-silicate
+Diameter: 7 (7,000 km)
+Mass: 7 (0.5 Earth)
+Gravity: 7 (0.7 g)
+Moons: none
+Tidal locked: no
+Atmosphere: 2 (0.1 atm)
+Temperature: 7 (225 K)
+Water: 9 (90%, subglacial ocean)
+Life: 10 (ocean-land plants)
+
+-- Planet 4 --
+Distance: 1 (0.05 AU)
+Planet type: silicate
+Diameter: 13 (13,000 km)
+Mass: 10 (1.1 Earth)
+Gravity: 10 (1 g)
+Moons: none
+Tidal locked: no
+Atmosphere: 8 (0.65 atm) -> 18 (10 atm)
+Temperature: 11 (305 K) -> 21 (900 K)
+Water: none
+Life: none
+
+-- Planet 5 --
+Distance: 6 (0.6 AU)
+Planet type: iron-silicate
+Diameter: 3 (3,000 km)
+Mass: 3 (0.15 Earth)
+Gravity: 3 (0.3g)
+Moons: none
+Tidal locked: no
+Atmosphere: none
+Temperature: 6 (200 K)
+Water: 3 (30%, subglacial ocean)
+Life: 10 (ocean-land plants)
+
+-- Planet 6 --
+Distance: 16 (15-20 AU)
+Planet type: iron
+Diameter: 12 (12,000 km)
+Mass: 11 (1.3 Earth)
+Gravity: 11 (1.1 g)
+Moons: 1 major
+Tidal locked: no
+Atmosphere: 7 (0.55 atm)
+Temperature: 1 (<45 K)
+Water: 6 (60%, completely frozen)
+Life: 6 (early multicellular)
+-- Moon 1 --
+Distance: 8 (160,000 km)
+Planet type: iron
+Diameter: 1 (1,000 km)
+Mass: 2 (0.07 Earth)
+Gravity: 2 (0.2 g)
+Tidal locked: yes
+Atmosphere: none
+Temperature: 3 (77-100 K)
+Water: none
+Life: none
+
+-- Planet 7 --
+Distance: 9 (1.6 AU)
+Planet type: silicate
+Diameter: 14 (14,000 km)
+Mass: 12 (1.5 Earth)
+Gravity: 12 (1.2 g)
+Moons: 1 major
+Tidal locked: no
+Atmosphere: 11 (1.4 atm)
+Temperature: 3 (77-100 K)
+Water: 7 (70%, completely frozen)
+Life: 6 (early multicellular)
+-- Moon 1 --
+Distance: 8 (160,000 km)
+Planet type: silicate
+Diameter: 1 (1,000 km)
+Mass: 1 (0.03 Earth)
+Gravity: 1 (0.1 g)
+Tidal locked: yes
+Atmosphere: none
+Temperature: 3 (77-100 K)
+Water: none
+Life: none

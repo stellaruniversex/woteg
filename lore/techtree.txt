@@ -1,0 +1,21 @@
+--STARSHIP TECH TREE--
+CIVILIAN
+	
+Tech	Light Cargo	Heavy Cargo	SHeavy Cargo	Light Pass	Heavy Pass	Civ Escort
+T12	Mark1
+T13	TrainerCargo
+T14	Strider						Transporter
+T15	Interexp	Elephant	Mammoth				Traverser
+T16					Behemoth			Paradise
+T17	InterexpII					Pleasant
+T18			Rhino		BlueWhale
+T19									SandyShores
+T20	InterexpIII			OrcaWhale	Sunshine
+T21							
+T22			Hippo						Sailor
+T23	InterexpIV			Megalodon	Summer
+T24	
+T25							Tropica		Treehold
+T26	InterexpV	Llama		Pterosaur
+T27
+T28					Plesiosaur

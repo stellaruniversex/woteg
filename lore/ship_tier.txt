@@ -1,0 +1,25 @@
+F - Poor - starter ship, always available for purchase in poor, and sometimes in medium-wealth systems, can be routinely produced in any starship factory at any tech level
+
+E - Mediocre - always available for purchase in medium and high-wealth, sometimes in poor systems, can be routinely produced in any starship factory at tech 12+
+
+D - Average - always available for purchase in high-wealth systems, sometimes in medium-wealth systems, can be routinely produced in any starship factory at tech 13+
+
+C - Common
+
+B - Improved
+
+A - Advanced - sometimes available for purchase in wealthy systems, can also be routinely produced in tier IV+ starship factories at tech 18+, or as a limited production run of tech 16+ ships
+
+S/Golden S - Supreme - very rarely available for purchase in the wealthiest systems, can also be produced as a part of a limited production run of tech 18+ ships
+
+SS/Platinum S - Exceptional - cannot be purchased, can only be received from newly conquered capital sectors, or as a part of a limited production run of tech 20+ ships
+
+SSS/Diamond S - Legendary - cannot be purchased, can only be received from a newly conquered Hafurn Regency sector, or assembled from Second Empire parts (tech 23-25)
+
+X1/Golden X - Mythical - cannot be purchased, can only be assembled from salvaged late Second Empire parts (tech 26-28), or as the ultimate reward for fully investigating the Palace of the Emperors
+
+X2/Platinum X - Ultimate - *definitely* cannot be purchased, can only be built as a project after successfully assembling 5 X1-tier ships, from late Second Empire (tech 26-28 parts), resulting ship is tech 29, can be upgraded to tech 30 with a massive, empire-wide project
+
+X3/Diamond X - Divine - you won't be buying this one until after heat death kills the universe, cannot even be assembled, only received as a reward for repairing the only relatively intact Kingdom of the Dawn ship (tech 31)
+
+Ω - Infinite - cannot be acquired *ever!*, these are ships of tech 32+ from long fallen multi-galactic empires and are completely incomprehensible to any modern minds

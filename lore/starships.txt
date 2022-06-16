@@ -1,0 +1,453 @@
+--STARSHIPS OF THE KNOWN GALAXY--
+
+Published by the Galactic Survey Agency annually
+Last updated 32108 CE (684 Third Empire)
+Note that the presence of some ships is tightly controlled by state governments, and accurate information may be scarce, or the only available information may be falsified to intimidate enemy states.
+Ships are grouped by class (corvette -> frigate -> destroyer -> cruiser -> battlecruiser -> battleship -> dreadnought etc.) top to bottom.
+Some ships have better FTL drives than their tech level should allow, these are mostly refined, more powerful examples of existing FTL drives, or unreliable prototypes which have been modified for regular usage.
+
+-- CIVILIAN/PRIVATELY BUILT --
+In addition to the extensive sets of military ships, there are numerous types of civilian ships, generally built privately by a manufacturing megacorporation. Most of them do not have the advanced shielding, weaponry or FTL drives of military ships, so they generally travel with escorts, either privately hired or assigned by the state government. They range in tech level from tech 12 to tech 17, the latter only produced at three starship factories galaxy-wide, and tech 18 prototypes have been recently unveiled.
+
+Mark 1 Shuttle
+The Mark 1 Shuttle is an easy to control and very inexpensive ship, used to train recruits in the art of basic starship control. In most Mark 1s, the FTL drive is omitted to further reduce costs, as they are not meant to travel to other systems.
+Manufacturer: Innotech
+Mass: 18 t
+Max cargo: 5 t
+Tech level: 12
+FTL drive: Warp 3-3 (108 c)
+FTL range: 6 ly
+Reactor: 1x NUC-12 Fission (12 MW)
+Operation crew: 1
+Max crew: 2
+Unit cost: $100,000 (Cr 5,000)
+
+Strider-class cargo ship
+The Strider-class is a starter cargo ship for new traders looking for a relatively safe way of earning money. Introduced in 475 to make interstellar shipping accessible to smaller companies, the Strider-class has very low maintenance and consumes small amounts of fuel, even when warping.
+Manufacturer: Interstellar Cargo Ship Company (ICSC)
+Mass: 770 t
+Max cargo: 405 t
+Tech level: 14
+FTL drive: Warp 5-1 (1,296 c)
+FTL range: 20 ly
+Reactor: 1x MS-4000 Boosted Fusion (4 GW)
+Operation crew: 50
+Max crew: 80
+Unit cost: $17.9M (Cr 895,000)
+Min docking port: Type II
+
+Interexp cargo ship
+The Interexp is the standard cargo ship in the Known Galaxy, enabling the quick restoration of ravaged post-Second Empire trade since its introduction in 247. When it was introduced, it was a cutting-edge ship that yet was cheap to produce, with a Warp 5 FTL drive and lightweight, agile design. In 684, there are more than 340 million registered galaxy-wide, and 24 million are produced every year.
+In 652, two upgraded, more expensive variants were introduced: the Interexp Plus with a 150 ly FTL range, and the Interexp GTI with a Warp 5-3 warp drive.
+Manufacturer: Interstellar Cargo Ship Company (ICSC)
+Class: C (Common)
+Mass: 7,000 t
+Max cargo: 3,000 t
+Tech level: 14
+FTL drive: Warp 5-1 (1,296 c), upgraded in 510 to Warp 5-2 (2,592 c)
+FTL range: 105 ly
+Reactor: 1x GS-100 Boosted Fusion (100 GW)
+Operation crew: 235
+Max crew: 300 (standard), 2,000 (in passenger configuration)
+Unit cost: $206M (Cr 10,300,000)
+Min docking port: Type III
+
+Interexp II cargo ship
+The Interexp II is a complete overhaul of the Interexp-class, first produced in 673 and featuring highly advanced tech 17 components, including shielding licensed from the Asterian government. The Interexp II is only produced at the ICSC Capilia factory at a rate of 5,000/year, to increase to 28,000/year by 690. In spite of this limited production, or perhaps because of it, the Interexp II is highly sought after, and the unit price increased from $600M when first introduced, to $2,355M today. Due to its much higher price, the Interexp II is only commonly found running highly lucrative trade routes.
+
+Even though the stock Interexp II is already tough to find, the ICSC is planning to introduce a Turbo version, with a 275 ly FTL range and Warp 5-9 drive, in 685.
+Manufacturer: Interstellar Cargo Ship Company (ICSC)
+Class: B (Improved)
+Mass: 8,300 t
+Max cargo: 4,000 t
+Tech level: 17
+FTL drive: Warp 5-7 (9,072 c), Warp 5-9 (11,664 c) Turbo
+FTL range: 235 ly, 275 ly Turbo
+Reactor: 1x GS-150 Boosted Fusion (150 GW), 1x GS-200 (200 GW) Turbo
+Operation crew: 235
+Max crew: 300 (standard), 2,000 (in passenger configuration)
+Unit cost: $2,355M (Cr 117,750,000), $2,925M (Cr 146,250,000) Turbo
+Min docking port: Type III
+
+Elephant-class heavy cargo ship
+Manufacturer: Megavessel Industries (MEGA)
+Mass: 60,000 t
+Max cargo: 38,000 t
+Tech level: 15
+FTL drive: Warp 5-3 (3,888 c)
+FTL range: 500 ly
+Reactor: 3x GS-280 Boosted Fusion (840 GW)
+Operation crew: 600
+Max crew: 1,000
+Unit cost: $6,400M (Cr 320,000,000)
+Min docking port: Type V
+
+Mammoth-class heavy cargo ship
+Manufacturer: Megavessel Industries (MEGA)
+Mass: 114,000 t
+Max cargo: 78,000 t
+Tech level: 15
+FTL drive: Warp 5-3 (3,888 c)
+FTL range: 625 ly
+Reactor: 3x GS-500 Boosted Fusion (1500 GW)
+Operation crew: 1,250
+Max crew: 2,000
+Unit cost: $12,000M (Cr 600,000,000)
+Min docking port: Type VI
+
+Behemoth-class superheavy cargo ship
+The Behemoth-class is the heaviest civilian ship currently in service, and the second heaviest ship overall, only outpaced by the 240,000 t Zvezda-class dreadnought. The Behemoth-class is a brand-new design meant to handle the ever-increasing cargo volumes of major trade routes, and can only dock to type VII or larger docking ports. Introduced in 679, over 9,000 have been produced, mainly to support the high-volume Capilian oil route.
+Manufacturer: Megavessel Industries (MEGA)
+Mass: 216,000 t
+Max cargo: 145,000 t
+Dimension: 400 m x 160 m x 135 m
+Tech level: 16
+FTL drive: Warp 5-6 (7,776 c)
+FTL range: 850 ly
+Reactor: 5x GS-500 Boosted Fusion (2500 GW)
+Operation crew: 1,800
+Max crew: 2,600
+Unit cost: $28,000M (Cr 1,400M)
+Min docking port: Type VII
+
+Blue Whale-class superheavy cargo ship
+The Blue Whale-class is the heaviest starship that is known to be seriously developed, and not merely a concept, even heavier than some space stations. So far, the Blue Whale-class has been publicly seen as a set of prototype ships occassionally carrying extremely heavy loads, apparently to military bases for unknown top-secret projects, even though its introduction is scheduled for spring 698, around 14 years from now. The Blue Whale can only dock to type VIII ports, usually used for docking space stations together.
+Manufacturer: Megavessel Industries (MEGA)
+Mass: 375,000 t
+Max cargo: 280,000 t
+Dimension: 650 m x 292 m x 180 m
+Tech level: 18
+FTL drive: Warp 6-3 (23,328 c)
+FTL range: 2,500 ly
+Reactor: 5x GS-800 Boosted Fusion (4 TW)
+Operation crew: 3,000
+Max crew: 4,000
+Unit cost: $66,000M (Cr 3,300M)
+Min docking port: Type VIII (Space Station Port)
+(editor's note, don't show to anyone!: the Blue Whale wouldn't be introduced until 706! it was also overbudget two-fold)
+
+Traverser-class passenger ferry
+The Traverser-class is a massive passenger and cargo ferry, the largest of its kind in the Known Galaxy. It has served well the major trade routes of the Known Galaxy since 566, with capacity for over 12,000 passengers and 15,000 t of cargo. Though considered a budget option, being overtaken by the newer Paradise-class, the Traverser-class remains a popular choice, enabling interstellar travel for those who couldn't normally afford to travel otherwise.
+Manufacturer: Interstellar Cargo Ship Company (ICSC)
+Mass: 165,000 t
+Max cargo: 15,000 t
+Tech level: 15
+FTL drive: Warp 5-3 (3,888 c)
+FTL range: 585 ly
+Reactor: 3x GS-500 Boosted Fusion (1500 GW)
+Operation crew: 1,100
+Max crew: 1,600
+Max passengers: 12,000
+Unit cost: $13,000M (Cr 650M)
+Min docking port: Type VI
+
+Paradise-class cruise ship
+The Paradise-class is the largest of the passenger-specialized ships in the Known Galaxy, introduced in 660 to accomodate rising levels of tourism. The Paradise-class is comparable in size to the largest battleships in service, and features a full shopping mall, swimming pool, a casino, two premier restaurants and luxurious rooms with window-screens that turn into beautiful views of landscapes in space.
+Manufacturer: Civilian Vessel Agency (CVA)
+Mass: 90,000 t
+Tech level: 16
+FTL drive: Warp 5-5 (6,480 c)
+FTL range: 550 ly
+Reactor: 2x GS-500 Boosted Fusion (1000 GW)
+Operation crew: 900
+Max crew: 1,250
+Max passengers: 6,000
+Unit cost: $18,000M (Cr 900M)
+Min docking port: Type V
+
+Pleasant-class cruise ship
+The Pleasant-class represents a radical departure from the growth that led to the Paradise-class; instead it is around 1/3 of the size of the Paradise-class and focused on very wealthy people instead of tourists, with the most advanced technology available to civilian enterprises and unprecedented luxury and comfort, while being able to dock even to type III ports. The Pleasant-class is not yet in production, only a few pre-production ships have so far been unveiled at trade shows, and its introduction is scheduled for mid 686.
+Manufacturer: Civilian Vessel Agency (CVA)
+Mass: 30,000 t
+Tech level: 17
+FTL drive: Warp 5-8 (10,368 c)
+FTL range: 280 ly
+Reactor: 2x GS-500 Boosted Fusion (1000 GW)
+Operation crew: 350
+Max crew: 550
+Max passengers: 800
+Unit cost: $12,350M (Cr 617.5M)
+Min docking port: Type III
+
+Factorium Minimum-class space manufactory
+The Factorium Minimum standard factory is the first, smallest, and currently the only type of space-based starship factory in service in the Known Galaxy. It can produce sublight ships of up to 250 t, and is therefore used in systems where intrasystem ships are in such high demand that ground-based factories cannot produce enough without sacrificing other ship production. The Factorium Minimum is one of the few ships that is built solely in space, as opposed to nearly every other vessel, which are built on ground and transported by space elevator.
+Manufacturer: Factorium Company
+Mass: 1,400,000 t
+Tech level: 16
+FTL drive: none
+Reactor: 12x GS-800 Boosted Fusion (9.6 TW)
+Operation crew: 1,300
+Max crew: 1,500
+Unit cost: $100,000M
+Docking ports: 2x Type X (for connecting in series), 1x Type VIII, 2x Type VII, 12x Type VI
+Min docking port: Type X
+
+Factorium Medium-class space manufactory
+The Factorium Medium is a scaled-up Factorium series starship factory, 
+Mass: 10,000,000 t
+
+Factorium Maximum-class space manufactory
+Mass: 150,000,000 t
+
+Factorium Ultimum-class space manufactory
+Mass: 5,000,000,000 t
+
+-- EMPIRE OF ASTERIA/THIRD EMPIRE --
+Asteria's ships are relatively high-tech compared to most of the Known Galaxy, with ships of tech 15-17 being common. Compared to Khaldaar, Asterian ships are heavier and more balanced in their design, with shielding of roughly equal strength across the entire ship and a more conservative "trench war" strategy.
+
+Caventium-class destroyer
+
+Bethra-class light cruiser
+
+Fabius-class heavy cruiser
+
+Absolutio-class light battleship
+Introduced: 660
+Mass: 64,000 t
+Dimension: 290m x 90m x 70m
+Tech level: 17
+FTL drive: Warp 6-1 (7,776 c)
+FTL range: 350 ly
+Reactor: 3x GS-500 Boosted Fusion (1500 GW)
+Operation crew: 2,000
+Max crew: 3,600
+Unit cost: $19,000M
+
+Augustia-class heavy battleship
+Introduced: 660
+Mass: 100,000 t
+Dimension: 385m x 125m x 80m
+Tech level: 17
+FTL drive: Warp 6-1 (7,776 c)
+FTL range: 565 ly
+Reactor: 4x GS-500 Boosted Fusion (2000 GW)
+Operation crew: 3,200
+Max crew: 6,500
+-Weapons-
+Main: 5x 350mm ion cannons (front)
+1x 600mm railgun (front)
+6x 300mm railgun (side)
+4x 300mm railgun (rear)
+Secondary:
+300x Replicator Missile I (3 replications)
+60x 125mm railguns
+30x unmanned fighter bay
+Laser point defense
+Unit cost: $26,000M
+
+Tonarium-class starship carrier
+Introduced: 654
+Mass: 154,000 t
+Max cargo: 90,000 t
+Dimension: 675m x 180m x 135m
+Tech level: 17
+FTL drive: Jump 2-2 (93,312 c, recharge time 20 days) + Warp 6-1 (7,776 c)
+FTL range: 1,280 ly/jump (upgraded to 1,500 ly/jump in 683), 800 ly
+Reactor: 5x GS-800 Boosted Fusion (4000 GW)
+Operation crew: 5,000
+Max crew: 7,500
+Unit cost: $45,000M
+
+Mater Cosmica-class mothership
+The Cosmic Mother, or Mater Cosmica in Classical Augustian, is a hypothetical design for a starship-making mothership, using resources scavenged from asteroids and gas giants to make spaceships up to, and including the size of a light cruiser. The design calls for major advancements, especially in power technology, likely reaching tech 21, meaning the Mater Cosmica may not be constructed until 800.
+Mass: 6,000,000 t
+Dimension: 2120m x 500m x 370m
+Tech level: 21?
+FTL drive: Warp 7-1 (46,656 c)
+FTL range: 3,000 ly
+Reactor: 1x Sun Core (3 PW)
+Operation crew: 36,000
+Max crew: 55,000
+Unit cost: $1,800,000M (Cr 90,000M)
+Min docking port: Type X
+
+-- EMPIRE OF KHALDAAR --
+Khaldaar's ships are the most advanced and fastest of any major faction, with ships of confimed tech levels up to 17, and even 18 if the claims of advanced leaked jump-capable ships are to be believed. Their ships mostly depend on powerful laser weapons and relativistic railguns, with a powerful frontal shield to repel even massive enemy fire, at the cost of the rest of the shielding. This means Khaldaarim ships depend either on hit-and-run attacks, or rapid-fire frontal destruction of enemy fleets, allowing them to defeat fleets twice their size, but making them very vulnerable to flank attacks. 
+
+With no ability to properly defend against flanking attacks, Khaldaarim ships have very powerful thrusters to escape potential flanking attacks, and possibly turn them into a frontal attack much more suited to Khaldaarim military doctrine.
+
+Yonthil-class jump cruiser
+The Yonthil-class was spotted in a leak of high-tech Khaldaarim starship documents, and its existence is doubtful, due to the Khaldaarim tendency to fabricate ships more powerful than they actually have, to fool Asterian officials. However, they are plausible as some Khaldaar planets have tech 18.
+Mass: 29,000 t
+Tech level: 18
+FTL drive: Jump 2-5 (233,280 c, recharge time 139 hours/~6 days)
+FTL range: 1,060 ly/jump
+Reactor: 2x GS-500 Boosted Fusion (1000 GW)
+Operation crew: 1,100
+Max crew: 2,500
+Unit cost: $21,000M
+
+Vannor-class jump battlecruiser
+The Vannor-class was spotted in a leak of high-tech Khaldaarim starship documents, and its existence is doubtful, due to the Khaldaarim tendency to fabricate ships more powerful than they actually have, to fool Asterian officials. However, they are plausible as some Khaldaar planets have tech 18.
+Mass: 46,000 t
+Tech level: 18
+FTL drive: Jump 2-5 (233,280 c, recharge time ~9 days)
+FTL range: 1,600 ly/jump
+Reactor: 3x GS-800 Boosted Fusion (2.4 TW)
+Operation crew: 2,000
+Max crew: 4,000
+-Weapons-
+Main: 800 GW blue laser (front)
+Unit cost: $42,000M
+
+Holsaen-class electric cruiser
+The Holsaen-class was spotted in a leak of high-tech Khaldaarim starship documents, and its existence is doubtful, due to the Khaldaarim tendency to fabricate ships more powerful than they actually have, to fool Asterian officials. However, they are plausible as some Khaldaar planets have tech 18.
+Mass: 37,500 t
+Tech level: 18
+FTL drive: Warp 6-3 (23,328 c)
+FTL range: 800 ly
+Reactor: 1x Large Antimatter Fuser (6 TW)
+Operation crew: 1,200
+Max crew: 2,500
+Weapons:
+Main: 3.25 TW Holz cannon (electric gun)
+Unit cost: $55,000M
+
+Caenyel-class light battleship
+The Caenyel-class battleship was introduced in 32092 CE (668 TE), and is named after Empress Caenyel re Lerathel.
+Mass: 47,800 t
+Tech level: 17
+FTL drive: Warp 6-1 (7,776 c)
+FTL range: 295 ly
+Reactor: 3x GS-280 Boosted Fusion (840 GW)
+Operation crew: 1,800
+Max crew: 4,000
+Unit cost: $18,504M
+
+Arayel-class heavy battleship
+The Arayel-class battleship was introduced in 32094 CE (670 TE), and is named after Empress Caenyel's youngest son, Crown Prince Arayel re Lerathel.
+Mass: 74,500 t
+Tech level: 17
+FTL drive: Warp 6-1 (7,776 c)
+FTL range: 485 ly
+Reactor: 3x GS-500 Boosted Fusion (1500 GW)
+Operation crew: 2,900
+Max crew: 6,800
+Unit cost: $29,540M
+
+Oradil-class light battleship
+The Oradil-class was spotted in a leak of high-tech Khaldaarim starship documents, and its existence is doubtful, due to the Khaldaarim tendency to fabricate ships more powerful than they actually have, to fool Asterian officials. However, they are plausible as some Khaldaar planets have tech 18. The Oradil-class light battleship is named after Empress Caenyel's younger brother, Oradil re Lerathel.
+Mass: 81,000 t
+Tech level: 18
+FTL drive: Warp 6-3 (23,328 c) + Hyperlane 3-2 (93,312 c)
+FTL range: 2,000 ly
+Reactor: 2x Large Antimatter Fuser (12 TW)
+Operation crew: 3,650
+Max crew: 7,500
+-Weapons-
+Main: 2 TW blue laser (front)
+Unit cost: $70,000M
+
+Mahaar-class heavy battleship
+The Mahaar-class was spotted in a leak of high-tech Khaldaarim starship documents, and its existence is doubtful, due to the Khaldaarim tendency to fabricate ships more powerful than they actually have, to fool Asterian officials. However, they are plausible as some Khaldaar planets have tech 18. It is named after the homeland of the Mahaarim.
+Mass: 147,000 t
+Tech level: 18
+FTL drive: Warp 6-3 (23,328 c) + Hyperlane 3-2 (93,312 c)
+FTL range: 3,200 ly
+Sublight drive: Antimatter Thruster (150,000 km/s, max range 10 ly), consumes 2.5 TW power/7 TW emergency
+Reactor: 4x Large Antimatter Fuser (24 TW)
+Operation crew: 5,600
+Max crew: 9,000
+-Weapons-
+Main: 4 TW Holz Cannon (electric gun)
+2x 1 TW blue laser (front)
+10x 300mm ion cannons (front)
+4x 600mm railguns (rear)
+10x 330mm railguns (side)
+Secondary: 
+460x Replicator Missile I (3 replications)
+128x 125mm cryocannons
+Defense: Electric Shield (5 TW)
+Command: Semi-Automated, Photon Computer IV framework
+Inventory management: Fully Automated, Photon Computer IV
+Unit cost: $130,000M
+
+-- FROSTHAVEN PEOPLE'S REPUBLIC --
+The ships of the Frosthaven People's Republic are mostly low-tech (tech 13-15), and are famous for being pre-fabricated from modular pieces, thus allowing Frosthaven to build bigger ships than any other known state, at about the same price as a comparable Asterian ship two size tiers lower, or a comparable Khaldaarim ship three size tiers lower. Frosthaven also uses a much smaller number of smaller, high-tech (tech 16-17) ships.
+
+Frosthaven's ships use brute force firepower to overwhelm smaller fleets, and have very thick armor to compensate for relatively light shielding, meant only to protect from small asteroids. This comes at a heavy cost of flexibility, and even their thick armor can't sustain constant flanking attacks, the main method for countering Frosthaven's starship tactics. The main weapons are large-caliber (600mm and 1,000mm) sublight cannons and smaller 155mm railguns, as well as kinetic point defense, but the more advanced ships have laser point defense and relativistic missiles.
+
+Krasnadolina-class frigate
+Mass: 1,300 t
+Tech level: 17
+FTL drive: Warp 6-1 (7,776 c)
+FTL range: 125 ly
+Reactor: 1x GS-150 Boosted Fusion (150 GW)
+Operation crew: 150
+Max crew: 280
+-Weapons-
+Main: 375mm sublight cannon
+2x 155mm railgun (0.1 c)
+Secondary: 4x Relativistic Missile
+18x 85mm sublight cannon
+
+Morozov-class light battleship
+Mass: 84,000 t
+Tech level: 15
+FTL drive: Warp 5-4 (5,184 c)
+
+Evorburg-class heavy battleship
+Mass: 148,000 t
+Tech level: 15 
+FTL drive: Warp 5-4 (5,184 c)
+
+Zvezda-class dreadnought
+Mass: 240,000 t
+Tech level: 15
+FTL drive: Warp 5-4 (5,184 c)
+
+Taigaskaya-class dreadnought
+The Taigaskaya-class dreadnought, introduced in 683 to slowly replace the outdated Zvezda, is the largest high-tech (tech 16-17) ship known to be mass-produced. It also features the fastest warp drive in active service, making it roughly twice as fast as the fastest (undisputed) Asterian and Khaldaarim ships.
+Mass: 208,000 t
+Tech level: 17
+FTL drive: Warp 6-2 (15,552 c)
+FTL range: 1,250 ly
+
+-- HAFURN REGENCY (heir to Second Empire) --
+The Hafurn Regency claims to be the legitimate successor to the Empire of the Stars, or the Second Empire, which once ruled almost a tenth of the galaxy at its peak, and had tech levels as high as 29 (see STIL for more information), almost unimaginable by today's standards. The Hafurn Regency is a far cry from what the Second Empire was, but it still wields ships at tech levels as high as 19, more advanced than even the most advanced Khaldaar planets.
+
+Arligh-class cruiser
+Mass: 20,000 t
+Tech level: 19
+FTL drive: Jump 3-2 (559,872 c, recharge time 70 hours/~3 days) + Warp 6-6 (46,656 c)
+FTL range: 1,600 ly/jump, 2,000 ly
+Sublight drive: Antimatter Thruster (150,000 km/s, max range 3 ly), consumes 600 GW power/1.5 TW emergency
+Reactor: 1x Medium Antimatter Fuser (2.5 TW)
+Operation crew: 900
+Max crew: 1,800
+-Weapons-
+Main: 800 GW blue laser (front)
+2x polarizing 100 GW blue laser (front, can be combined with main laser)
+4x 600mm antimatter guns (side)
+6x 300mm ion cannons (side)
+2x 600mm antimatter guns (rear)
+Secondary:
+104x Replicator Missile I (3 replications)
+40x 125mm cryocannons
+Defense: Electric Shield (500 GW)
+Command: Semi-Automated, Photon Computer IV framework
+Inventory management: Fully Automated, Photon Computer IV
+Unit cost: $29,000M
+
+Gaesal-class battlecruiser
+Mass: 36,000 t
+Tech level: 19
+FTL drive: Jump 3-2 (559,872 c, recharge time 4 days) + Warp 6-6 (46,656 c)
+FTL range: 2,250 ly/jump, 3,000 ly
+Sublight drive: Antimatter Thruster (150,000 km/s, max range 5 ly), consumes 825 GW power/2.2 TW emergency
+Reactor: 1x Large Antimatter Fuser (6 TW)
+Operation crew: 1,300
+Max crew: 2,600
+-Weapons-
+Main: 1.3 TW blue laser (front)
+3x polarizing 100 GW blue laser (front, can be combined with main laser)
+6x 600mm antimatter guns (side)
+10x 300mm ion cannons (side)
+4x 600mm antimatter guns (rear)
+Secondary:
+180x Replicator Missile I (3 replications)
+60x 125mm cryocannons
+Defense: Electric Shield (1 TW)
+Command: Semi-Automated, Photon Computer IV framework
+Inventory management: Fully Automated, Photon Computer IV
+Unit cost: $45,000M

@@ -1,0 +1,325 @@
+-- News agency legend --
+Galactic Courier - a private news agency and mail delivery service, and the only one covering the entire Known Galaxy, founded in -328 TE (31,096 CE), the most important general news source
+Acta Asteriae - Empire of Asteria (Third Empire)'s government news agency, mostly blatant Asterian propaganda in wartime, otherwise an authoritative source for Asteria's diplomatic and economic dealings with the Known Galaxy
+Khaldaarim Enelye - Empire of Khaldaar's government news agency, mostly blatant Khaldaarim propaganda in wartime, a biased self-congratulation of all Khaldaarim actions in peacetime.
+Vremya Polyary/Время Польяры - Frosthaven People's Republic's government news agency
+-- Notes --
+Terra month names are used for July and August, the in-universe equivalents are Quintilis and Sextilis, as in the pre-Julian and pre-Augustan (before Julius Caesar and Augustus Caesar, not to be confused with Augustia(n)) Roman calendar.
+
+23 September 0 Third Empire (31,424 Common Era)
+--Acta Capiliae--
+FOUNDING OF THE EMPIRE OF ASTERIA
+Today, the Dictator of Capilia, Marcus Claudius Alborus, has been unanimously crowded by the Senate as Imperator of Asteria, in order to reward him for his fierce defense of the Capilian Republic from massive raider attacks and an Enaarim splinter faction.
+
+In the same meeting, the Senate agreed to abolish the Capilian Republic and found the Empire of Asteria, which will encompass the regions of Capilia, Fabius, Caesar, Brutus, Nevanus, Octavius and Magnus.
+
+7 August 520 Third Empire (31,944 Common Era)
+--Acta Asteriae--
+ENAARIM REALM SURRENDERS TO ASTERIA!
+After the Asterian capture of Vendael Thalanil, the most tailward region of Enaar, and military stalemate elsewhere, the Vaaltha of Enaar, Caranthil Alastar Raendel (Caranthil II) has signed an instrument of conditional surrender with the Emperor of Asteria, Lucius Claudius Rubinus (Lucian I).
+
+Under the agreement, the Empire of Asteria will annex the tailward regions of Thalanil and Eleniel, and the rest of the Realm will be integrated as an autonomous region of the Empire. The agreement will become effective on 1 January 521.
+
+1 May 608 Third Empire (32,032 Common Era)
+--Galactic Courier--
+PROCEDURAL COMPRESSION TECHNIQUES IN SOFTWARE
+Although developed for military purposes, procedural compression has been extensively used in the revolutionary FPS game Depths of Yaanthen, where textures and models are generated and detailed on the fly, reducing the game size from an impossible 350 megabytes to a more manageable 15 MB.
+
+A demo of the game, playable to the 3rd chapter (of 12) is included in each copy of the Galactic Courier (size: 6 MB), the full game is $49 in Dahanno, Capilia and Veleth Yarthel, and $59 (+ shipping) elsewhere.
+
+Due to the increased number of subscriptions to the Galactic Courier and cheaper transport provided in partnership with the Interstellar Cargo Ship Company, the Galactic Courier is announcing a discount of 20% until 1 July 608, or 60 days from receiving this message whichever is later, on all yearly and lifetime subscriptions:
+
+Yearly:
+Main Capitals (Dahanno, Capilia, Veleth Yarthel): $219
+Capital Region: $249
+Capital Outskirts: $299
+Middle Regions: $379
+Frontier Regions: $459
+
+Lifetime:
+Capital Areas: $1499
+Middle Regions: $1699
+Frontier Regions: $1999
+
+For sector-wide advertisements, the price is $30/cm^2, for region-wide advertisements the price is $160/cm^2, for country-wide advertisements the price is $850/cm^2 in minor countries, $2400/cm^2 in major countries, and $7000/cm^2 in Asteria and Khaldaar, for galaxy-wide advertisements the price is $80,000/cm^2. There are 2 pages reserved for each level of advertisement, for a total of 8 pages.
+
+9 April 657 Third Empire (32,081 Common Era)
+--Khaldaarim Enelye--
+ENAARIM INFILTRATE, ATTACK VELETH AVERAEL!
+The rimward planet of Veleth Averael, a major regional center with a population of 50 billion as of 656, is mourning for the victims of a massive Enaarim attack on cities across the planet. At least 100,000 are confirmed dead, with whole city centers destroyed by strategically placed nuclear weapons, and industrial districts have been damaged by similar sabotages.
+
+The governor of Averael Sector, Cayretha re Athurin, told the citizens of Veleth Averael to remember the event, and to stay calm in the face of potential further attacks, as most of the perpetrators have been arrested and will face trial before every citizen of Khaldaar.
+
+10 November 684 Third Empire (32,108 Common Era)
+--Galactic Courier--
+DISASTER NEAR ABHIO!
+A Traverser-class passenger ferry, carrying 10,065 passengers and crew according to its manifest, has crashed in a desert on the planet of Abhio, in the star system of Yuknul, in the no man's land between Asteria and Khaldaar. At least 7,661 are dead, and 376 have been found alive. According to interviews with the crew, the ship was carrying some mysterious payload, perhaps archives of Second Empire technology, to the Empire of Khaldaar, which if acquired would give Khaldaar enough tech superiority to consider an invasion of Asteria.
+
+Of the people on board, all but one has been identified, who is currently reported as "missing". Witnesses say the unidentified person was seen shifting into various identities and appearances, and gave different names every time the witnesses talked to them.
+
+Palm Springs will release a public statement on the disaster after the preliminary investigation is completed.
+
+12 November 684 Third Empire (32,108 Common Era) - WotEG milleu
+--Galactic Courier--
+THE ABHIO DISASTER, PART II
+The preliminary investigation into the disaster of a Traverser-class ship, the ICS Aldhyen, that left 8,670 dead, continues. The main investigator, Peylor Yavaal, claims some sort of electromagnetic pulse fried the engines and electronics of the Aldhyen near Abhio, causing it to drop due to gravitational forces. Other investigators rated this hypothesis skeptically, as Yuknul, as a relatively inactive G5 star, is not known to have solar flares powerful enough to shut down electronics on Abhio.
+
+As for the unidentified "missing" person, [he/she] has been identified as [name], a [race] person traveling to Veleth Averael for a routine business trip. [He/She] could not comment on the disaster, saying that [he/she] fell unconscious in the aftermath of the disaster. (changes depending on name, gender and race)
+
+22 December 684 Third Empire (32,108 Common Era)
+--Galactic Courier--
+THE ABHIO DISASTER, PART III
+The investigation team into the disaster of the ICS Aldhyen near Abhio, in Yuknul that killed 8,670 of the 10,065 people on board, has reached a decisive conclusion - a 1 kt nuke was detonated by an Asterian-funded terrorist to frame Khaldaar for killing innocent civilians, to provoke a galactic-scale war. The nuke's EMP fried most electronics and the delicately managed engines of the ship, but surprisingly not the mysterious payload, which seems perfectly intact.
+
+Palm Springs CEO, Victor Vantick, has released a public statement on the disaster, and the unfortunate circumstances of the event. He promises to hire additional escorts to transport ships through the no man's land of the Asteria-Khaldaar border.
+
+Neither Empress of Khaldaar, Caenyel re Lerathel, nor Emperor of Asteria, Lucius Claudius Maximus have responded to requests to comment on the event. The Capilian Stock Exchange dropped 23.77 points after news of the disaster reached Capilia.
+
+3 January 685 Third Empire (32,109 Common Era)
+--Khaldaarim Enelye--
+ASTERIAN TERRORISTS DESTROY ICS ALDHYEN!
+On 10 November 684, a Traverser-class passenger ferry, the ICS Aldhyen, was destroyed by a terrorist, likely funded by the Third Empire to frame the Empire of Khaldaar for killing innocent civilians for no reason, creating a seemingly valid casus belli for a total war.
+
+The Yarthelia region government strongly condemns this attempt by the Asterians to destabilize the current situation, and is sending a formal diplomatic protest using the fastest available comms networks, using jump ships if possible. A message is also on the way to warn Her Majesty, Empress Caenyel re Lerathel, currently in Veleth Yarthel, of the incident and the diplomatic crisis.
+
+16 January 685 Third Empire (32,109 Common Era)
+--Acta Asteriae--
+TENSIONS IN NO MAN'S LAND!
+The disaster of the ICS Aldhyen, downed near Abhio, has led to increased tensions in the no man's land between the Empire of Asteria and Khaldaar, after the Galactic Courier spread an unsubstantiated claim, supposedly from the investigation team, that the ship was destroyed by an Asterian-funded terrorist to blame Khaldaar for killing innocent civilians, thus giving us a casus belli to declare war.
+
+The Khaldaarim propaganda press is already working hard to capitalize on the Galactic Courier's "report", painting the Asterians as a warmongering horde and launching anti-Asterian persecutions, and several Khaldaarim fleets have reportedly relocated close (as little as 28 ly, well in no man's land) to the Asterian border and provoked small-scale conflicts between scavenge ships and the more advanced fleets. The MILCON level for the Coreward Enaar region has been raised to 3 (high readiness), and 4 (above-normal readiness) for the rest of Asteria.
+
+There has been no response from the Empress of Khaldaar, Caenyel re Lerathel, and none is expected before March due to FTL drive limitations, and the response is not expected to reach Capilia until late June.
+
+2 March 685 Third Empire (32,109 Common Era)
+--Galactic Courier--
+ANTI-ENAARIM PROTESTS IN CAPILIA!
+The anti-elven sentiment caused by the ICS Aldhyen disaster, the negative press in an already tense region, and accusations by both Asteria and Khaldaar of staging the terrorist attack for political gain, is leading to large protests against the Enaarim, which have long been good allies of the Asterians and have nothing to do with the Mahaarim, with whom a tense situation exists.
+
+The Emperor of Asteria, Lucius Claudius Maximus, has called for peace and quiet in this unstable situation, stating that discrimination against the Enaarim may cause unrest in the Enaarim Realm, and possibly a revolt if the discrimination escalates to genocide.
+
+9 March 685 Third Empire (32,109 Common Era)
+--Khaldaarim Enelye--
+CRISIS IN YARTHELIA
+On 10 November 684, the ICS Aldhyen was destroyed by a likely Asterian terrorist with a 1 kt bomb, causing an EMP that destroyed its electronics and engines, crashing on the planet of Abhio. 8,670 of 10,065 passengers and crew are dead. News of the disaster was almost immediately received by local Khaldaar news agencies, causing a brief panic in rimward regions that officially border Asteria.
+
+The region government in Yarthelia sent a warning message using the fastest possible ships in its disposal, which has now reached the office of the Council of 100 Kaale, and will be delivered to Empress Caenyel re Lerathel as soon as possible. The warning message asks the Empress to travel to Veleth Averael to meet with Asterian senators, to avoid a potential war that would devastate both countries.
+
+22 April 685 Third Empire (32,109 Common Era)
+--Galactic Courier--
+TALKS BETWEEN KHALDAAR AND ASTERIA
+The first round of talks to hopefully defuse the increasingly tense political situation between the Empires of Khaldaar and Asteria, escalated by FTL-limit caused confusion, contradictory information and statements by angry politicians, has begun in Veleth Averael. The Khaldaarim side was headed by Empress of Khaldaar, Caenyel re Lerathel, the Asterian side was headed by Consul Gaius Tullius Cicero.
+
+1 July 685 Third Empire (32,109 Common Era)
+--Quanrayl Daily--
+NEO-VERSENIAN SEPARATISTS DEFEATED!
+The brief revolt by militant neo-Versenians to refound the State of Corlide, conquered in 334 by the Elvonin Federation, has been defeated at Aderwal, one of the places marking the border between civilized and wild space in the times of the First Empire. The rebel leaders are reported to have fled to Khaldaar, where they have been granted asylum by Empress Caenyel re Lerathel personally.
+
+The arrival of the Versenian rebels in Khaldaar threatens to further escalate galaxy-wide tensions, which erupted as a result of the ICS Aldhyen disaster, supposedly caused by an Asterian-funded terrorist to cause a galactic war.
+
+4 February 687 Third Empire (32,111 Common Era)
+--Acta Asteriae--
+GAIUS TULLIUS RE-ELECTED
+The Consul of the Senate and People of Asteria, Gaius Tullius Cicero, has been re-elected for a fifth 6-year term with 91% of the vote.
+
+As the Consul, Gaius Tullius represents the highest elected authority in Asteria, only below that of the Emperor, and holds legislative power over Asteria-wide civilian issues, as well as being Commander in Chief of the Asterian Armed Forces.
+
+18 September 692 Third Empire (32,116 Common Era)
+--Galactic Courier--
+ASTERIA DECLARES WAR ON KHALDAAR!
+An unexpected and shocking development has happened near the no man's land between the Empire of Khaldaar and Asteria, with 23 Asterian fleets on the march and at least one jump-capable fleet having crossed the no man's land to build vanguard bases for the fleets. Four fleets, the fastest and most high-tech ones, are clearing a safe path through the least debris-dense regions, the other, slower 19 fleets will cross soon after. The MILCON level for all of Asteria is raised to 1 (maximum readiness), the DEFREAD, Khaldaar's equivalent, is at level 9 (major war), and may be raised to level 10 (total war).
+
+Today, Emperor of Asteria, Lucius Claudius Maximus, has officially declared war on the Empire of Khaldaar, the message is expected to be received in Veleth Yarthel, where the Khaldaarim government resides, in early December, and Polyara, where Empress of Khaldaar, Caenyel re Lerathel is currently waging war against Frosthaven for its failure to pay Khaldaarim debts, in February 693.
+
+8 October 692 Third Empire (32,116 Common Era)
+--Acta Asteriae/News of Asteria--
+ASTERIA CROSSES NO MAN'S LAND!
+The fleets of Asteria have done what the Khaldaarim, and indeed us, thought impossible - we crossed the no man's land, filled with wreckage and rogue defense systems, in just three weeks. Though our losses were heavy, it was not in vain - we now have full control of two corridors, and with no apparent Khaldaarim response yet, we may just be able to reach Veleth Yarthel in a few months.
+
+28 January 693 Third Empire (32,117 Common Era)
+--Vremya Polyary/Polyara Times--
+FROSTHAVEN SURRENDERS TO KHALDAAR!
+The People's Soviet of Frosthaven has decided to surrender unconditionally to the Empire of Khaldaar to prevent further destruction. The war was caused supposedly by unpaid debts to Khaldaar, which shall be paid in full ASAP.
+
+The death toll is estimated at 556,095 million people, including 28,406 million military personnel, and the material damages are estimated at $23,428 trillion.
+(editor's note, don't show to anyone!: Khaldaar never sent any demands for repayment as they were too busy with the Galactic War)
+
+2 February 693 Third Empire (32,117 Common Era)
+--Khaldaarim Enelye--
+ASTERIANS TAKE VELETH AVERAEL!
+The shocking, unexpected and unprovoked attack on Khaldaar by the Third Empire have led to the capture of Veleth Averael and most of rimward Yarthelia, with no resistance yet from any Khaldaarim fleets. Despite only 2 fleets being deployed at the rimward frontier, we have reports that they are holding strong, dealing heavy damage to the Asterians!
+
+Her Majesty, Empress Caenyel re Lerathel is at Veleth Yarthel with her fleets, and is traveling to near the Averael sector to deal with the Asterian attacks.
+
+23 November 701 Third Empire (32,125 Common Era)
+--Khaldaarim Enelye/Khaldaarim News--
+GLORIOUS VICTORY NEAR ALYARIX!
+All citizens of Khaldaar, those who serve against the Imperial menace have achieved a glorious victory against the Asterians at Alyarix system! This system is the last barrier left to us reaching the core of Asteria, victory in the Galactic War is now assured!
+
+Our brave 38th, 39th, 40th, and 48th Fleets, led personally by Her Majesty, Empress Caenyel re Lerathel, cut into the porous defenses left by the Asterians. Despite our numerical disadvantage of just 116,000 against 200,000 Asterian, they lost half of their ships and 93,000,000 crew, we only lost 571 ships and 255,089 crew.
+
+Our fleets are now on their way to the outer core system of Fabius, where the Asterians are assembling another fleet. They have never expected our rapid warping capability, so their fleet will not be assembled in time, we will win easily!
+
+(editor's note, don't show to anyone!: the battle for Fabius was a Pyrrhic victory for Khaldaar, 8 entire fleets and 356,000 ships, 227,000,000 crew were lost on Khaldaar's side, 11 entire fleets and 480,000 ships, 390,000,000 crew were lost on the Asterian side. The Khaldaarim were forced to retreat tailward to prevent envelopment)
+Received: Veleth Averael 9 February 702
+Veleth Yarthel 28 March 702 (public), 31 December 701 (real)
+New Rekov 7 May 702
+
+29 January 702 Third Empire (32,126 Common Era)
+--Khaldaarim Enelye/Khaldaarim News--
+KHALDAARIM VICTORY IN FABIUS!
+The Asterian outer core system of Fabius has fallen to our brave Khaldaarim fleets after seven days of hard fighting. With Fabius in our control, nothing stands in our way between us and the very heart of the Empire, Capilia.
+
+The 10th, 12th, 18th, 21st, 25th, 29th, 38th, 39th, 40th and 48th Fleets engaged the cowardly Asterian armada, which was trying to reform itself to try to defeat our fleets. We brought a powerful surprise for them - a mighty electric cannon, which can zap whole fleets! We used it to the greatest effect, destroying 11 Asterian fleets together with almost 400 million of their crew, and we also took the planet Fabius with almost no casualties!
+
+Her Majesty, Empress Caenyel re Lerathel has pledged to make Capilia a trophy of the decisive Khaldaarim victory, and leave a puppet Asterian government in Caesar, just spinward of Capilia.
+
+(editor's notes, don't show to anyone!: the electric ship was destroyed in its giant weak spot, remember it needs to vent heat into the environment, a few heatseeking missiles was all it took to blast the ship to shreds
+
+the Asterians had another 12 fleets with an insane 650,000 ships and 550,000K crew ready to smash Caenyel's nearly broken armada, this was *definitely* not lost to the Khaldaarim and their intelligence networks)
+Received: Veleth Averael 30 April 702
+Veleth Yarthel 8 June 702 (public), 13 March 702 (real)
+New Rekov 24 June 702
+
+14 March 713 Third Empire (32,137 Common Era)
+--Galactic Courier--
+END OF THE GALACTIC WAR!
+The Galactic War, the largest conflict in recent history, has come to an end with the signing of the Treaty of Veleth Averael. The treaty provides for reparations of $18 quadrillion to be paid to the Empire of Khaldaar, as well as Khaldaarim control of the corridors through the no man's land, cleared in the first stages of the Galactic War and still operational today.
+
+Representatives from both Khaldaar and Asteria say the peace treaty will allow the order of stability to be kept, when it was close to collapsing during the Galactic War with Frosthaven declaring its own war against Elvon. Their remarks were repeated by Empress of Khaldaar, Caenyel re Lerathel and Emperor of Asteria, Lucius Claudius Maximus.
+
+The Republican Faction, consisting of formerly landed nobility, has rejected any treaty between Asteria and what they deem the illegitimate Khaldaarim government. If successful in taking power, the Consul-in-exile, Raveyel re Andasil, considers restarting the Galactic War after rebuilding the fleets to finish off the Enaarim, who he blames for the Night in Veleth Averael on 8 April 657, where Enaarim insurgents killed 280,000 Mahaarim in one bloody day.
+
+28 May 715 Third Empire (32,139 Common Era)
+--Galactic Courier--
+BREAKTHROUGH IN CAPILIAN INSTITUTE OF TECHNOLOGY!
+The Capilian Institute of Technology (CIT) reports that they have successfully developed early production versions of interstellar FTL radar, which will allow Capilia to track ships from many lightyears away, spatial stabilizers to prevent disintegration at high jump rates, and perfect replication of a cup of coffee, all signs of a tech 18 society according to the Standard Technological Identification List (STIL).
+
+With another $60 billion in funding, the CIT plans to break the current 100TW sustained laser power limit, and test a 1 petawatt (PW) laser by the end of 720 TE.
+Received: Dahanno 28 July 715 (Warp 6-2)
+Veleth Averael 4 September 715 (Warp 6-2)
+Veleth Yarthel 18 September 715 (Warp 6-2 + Jump 2-5)
+
+10 July 715 Third Empire (32,139 Common Era)
+--Khaldaarim Enelye/Khaldaarim News-- and --Galactic Courier--
+ARAYEL RE LERATHEL CROWNED EMPEROR!
+The Empire of Khaldaar was shocked by the report of the death of Empress Caenyel re Lerathel, Conqueror of Asteria, Warmaiden of New Rekov, and the Starkissed of the Seven Realms, aged 355, and ruler of Khaldaar for 197 years. According to Rathil re Andayen, one of the Empress' bodyguards, Caenyel was assassinated by a Republican terrorist, not an Imperial spy as previously suspected. The Empire of Khaldaar is working to dispel any rumors of Imperial attacks in its effort to normalize relations with Asteria.
+
+Arayel re Lerathel, only surviving child of Caenyel, has been immediately crowned as Emperor Arayel. He will make a traditional welcome speech on 11 July.
+
+A 20-day period of mourning has been enacted, beginning on 12 July in Veleth Yarthel, and 3 days after the message is received in other planets. All non-essential business will be shut down for the period, and citizens are encouraged to pay their respects at local shrines.
+Received: Veleth Averael 22 August 715 (Warp 6-2)
+Veleth Yarthel 10 July 715 (public/Warp 6-2), 10 July 715 (real/Jump 2-5)
+New Rekov 15 August 715 (Warp 6-2)
+Neureich 8 August 715 (Warp 6-2)
+Dahanno 15 September 715 (Warp 6-2)
+Elvonia 21 November 715 (Warp 6-2 + Warp 5-5)
+Polyara 3 January 716 (Warp 6-2 + Warp 5-5)
+Tenochitlan 14 February 716 (Warp 6-2 + Warp 5-5)
+Capilia 8 November 715 (Warp 6-2)
+Nal Qar'aan 1 April 716 (Warp 6-2 + Warp 5-6)
+
+3 March 716 Third Empire (32,140 Common Era)
+--Worker's Star--
+THE NEW MANIFESTO
+For centuries, the Galactic Courier, a total, galaxy-spanning monopoly, sponsored by corrupt capitalist governments and bribed with quadrillions, has tried to quash independent journalism. Their attacks have been especially vicious on anything that might be anything left of "liberal", i.e. fascist. They tried to shut us down for "defaming" their corrupt executives, we responded by arming ourselves. The Courier sent one million skilled mercenaries, but their skill could not replace the spirit of the people, they were utterly defeated by our, and Dahanno's volunteer militia, much smaller in size than their mercenaries. 
+
+Eventually, we *were* forced to go underground, but that was not an obstacle to grow our readership. By the beginning of the Galactic War in 692, we had more than 1 trillion readers, and a huge amount of donations that helped us counter the Galactic Courier. Now with the Galactic Courier's utter monopoly being shattered by their lost lawsuits, we have once again begun publishing as openly as we possibly can.
+
+The Worker's Star will begin printing in Dahanno, then focus on expanding to the rest of the Known Galaxy. We need your support to beat whatever forces of the Galactic Courier and other megacorps like it may try to suppress us again, mail us your donations to: 33 Hillory St, Ravenfield 282934, Dahanno, Dahanno Sector, or digitally using your favorite banking service (both will be delayed due to FTL limitations). Price of an individual magazine is $4.50 in Dahanno, $5.99 in Dahanno Sector, $6.99 in the rest of Dahanno, and $8.49 elsewhere.
+
+As long as we follow the star of Karl Marx, the revolution will be guided to success!
+
+15 June 716 Third Empire (32,140 Common Era)
+--Acta Asteriae/News of Asteria--
+DISMANTLING THE GALACTIC COURIER MONOPOLY
+In late 224, the last independent news service, the New Frontier News and Mail, serving sectors neglected by other news agencies, was bought out by the near-monopoly of the Galactic Courier for $1.6 quadrillion. Just 50 years later, the Galactic Courier bought every other major non-government news service, turning into a complete, galaxy-wide and often state-sponsored monopoly, with a 100% market share enforced by defamation lawsuits, despite doing a lot of defamation themselves, exaggerated and often false copyright claims, despite plagiarizing much of their content from local news agencies, and even in areas where IP laws do not apply (as in Khaldaar), and raiding actions designed to take out anything that survives of any potential competitor.
+
+However, this has now come to an end. In January 716, the Galactic Courier lost a lawsuit by the Asterian government for anti-competitive practices, and was forced to pay a record-breaking $93 quadrillion to the government. It then lost similar lawsuits in Khaldaar, Dahanno, Frosthaven and Caranetia, opening a path for the resurrection of independent news agencies.
+
+This destruction of a monopoly has already resulted in the re-founding of the Worker's Star, a socialist magazine formerly based in Dahanno, but now planning to print the magazine galaxy-wide.
+
+8 August 716 Third Empire (32,140 Common Era)
+--Khaldaarim Enelye--
+CITY OF CHERNOGRAD FOUND IN VELETH NELODEN!
+Yesterday, Khaldaarim Enelye was informed of the mysterious appearance of the Chernograd Institute, which used to be a major research facility in Frosthaven, Dahanno, that was researching a superspace drive when a Dimensional Rift caused its violent destruction and the death of 7,000,000 people. The Chernograd Institute was found on a random plot of farmland, whose owner, Erdhun Vachran, immediately contacted Khaldaarim Enelye to tell about this anomaly.
+
+Vachran told us that a large, mysterious building had appeared on his farm together with all of its employees, and the building was scaring the livestock. When a Khaldaarim Enelye crew traveled to the site of the mysterious building, they noticed that not just the Chernograd Institute, but the entire city of Chernograd and its suburbs had manifested itself, completely intact with all its citizens. The Veleth Neloden garrison is currently taking control of the city, and a temporary government in Chernograd has been installed.
+
+According to the Veleth Yarthel University, such spatio-temporal anomalies have become more common over the past 100 years, but the vast majority spawn in interstellar space, making them very difficult to detect.
+
+23 October 718 Third Empire (32,142 Common Era)
+--Galactic Courier--
+WARP 7 - A TRUE GIFT FOR EXPANSION?
+In the Known Galaxy, where low Warp 5 ships are still most common, and the fastest ships publicly known are either a mere Warp 6-3 (23.3K c), or Jump 2 (47K-280K c) with weeks-long recharge times, there has been a lot of incentive to research faster and faster FTL drives.
+
+To give an example of how long it takes to get a message from one part of an empire to another, let's say a top-tier Interexp-class cargo ship (tech 14), with a Warp 5-3 FTL drive, wants to get cargo from New Rekov to Veleth Averael, both in Khaldaar. The Interexp, in its stock configuration has an FTL range of 105 ly, and unlike most tech 14 ships, can travel directly from a planetary gravity well. The distance from New Rekov to Veleth Averael is 3,286 ly taking the safest route via Veleth Yarthel, meaning the ship would need to do 32 warps to reach Veleth Averael. Each 105 ly warp takes 9.9 days to execute, after which the ship has to refuel for 6 hours (0.25 days) before warping again.
+
+It would take 323.4 days, almost 1 year, including 8 days for refueling, assuming the ship didn't suffer any mechanical faults or had to detour out of dangerous areas. Including *those*, the travel time would likely be well over a year.
+
+With a Warp 7-2 FTL drive (expected tech 21-22), with a hypothetical range of 1,500 ly (ranges always increase with better technology), the ship would only need to do 3 warps. Taking 6 hours to refuel again, the hypothetical Warp 7 ship would only need 13.6 days (13 days 14 hours), with 18 hours for refueling, just 4.2% of the time of the Interexp. From Dahanno to the Galactic Core, it would take 20 warps, taking a total of 122.3 days to travel there, with 5 days for refueling.
+
+Despite a lot of research being invested into such high-level warp drives, no working examples have yet been produced, and none are expected before 760 at current rates.
+
+28 February 719 Third Empire (32,143 Common Era)
+--Galactic Courier--
+STRIKES IN FEDERATION OF DAHANNO!
+Over 1 trillion workers, almost 1/8 of the entire Federation of Dahanno workforce, have launched an unlimited, indefinite strike due to what they deem "intolerable" working conditions, low wages and lack of opportunity for upward mobility. While the strikes have been mostly peaceful, some strikers have brought handguns, assault rifles, and in more militant areas are constructing makeshift artillery and armored vehicles.
+
+The statements made by the Dahanno government dismissing the concerns of the workers and calling them "lazy", "not skilled enough", and "actually deserving to earn far less" have only further aggravated the people, leading to many unrelated workers joining the strikes in solidarity. The Capitol District in Qar'aan has been fortified, and is guarded by the elite Omega Division in anticipation of a potential battle.
+
+18 March 719 Third Empire (32,143 Common Era)
+--Galactic Courier--
+DAHANNO SOCIALIST REPUBLIC FOUNDED!
+The ongoing strikes in the Federation of Dahanno have moved to a new phase, with the seizure of Hernandez in coreward Federation territory. The rebels there have declared the government in Dahanno illegitimate, forming the Dahanno Socialist Republic that claims all of the Federation, but only controls about half of Nuevo Kansar at the moment.
+
+In Zhongguo sector, just spinward of Dahanno, the governor, Andel Murbrith, has reportedly ordered officials to defect to the Socialists to avoid a potentially bloody siege. In the region of Dovenain, strikers have captured a naval base with homemade starships, capturing the 20th Fleet with 13,856 ships. In Dahanno, attempts to suppress the unrest with violent force were met with powerful counterattacks from armed protesters.
+
+30 April 719 Third Empire (32,143 Common Era)
+--Acta Asteriae--
+IS IT OPPOSITE DAY IN DAHANNO YET?
+The latest in the series of confusion, lies and inversion from the Dahanno Revolution has been reported by the Acta Asteriae reporters in Dahanno, revealing everything about the attempts by the Dahanno government to salvage what little reputation they have after their horrific treatment of workers spilled over into revolution.
+
+In the official Dahanno News newspaper, one of Dahanno's members of parliament wrote a tirade of nonsensical and incoherent sentences, blaming the Dahanno Socialist Republic for murdering workers who disagreed with their ideology, of whom none could be reliably discerned, praising "hard-working businesspeople", who were actually corrupt executives of Dahanno's megacorps, for "resisting the communist menace" and "not submitting to an ideology of laziness" even as they fled Dahanno into the minor states that surround it, and once again calling the rebels "entitled", "lazy" and "traitorous" as usual.
+
+Acta Asteriae was not invited into a meeting of Federation of Dahanno's remaining high-level officials, with the Galactic Courier, Khaldaarim Enelye and Vremya Polyary also reporting they were denied permission to enter.
+
+3 May 719 Third Empire (32,143 Common Era)
+--Galactic Courier--
+REBELS TAKE CONTROL OF DAHANNO!
+The Dahanno Socialist Republic has announced that the capital of the Federation of Dahanno, Dahanno, is fully under their control, and the Federation fleets are either "gone", or "fleeing" according to the Socialist military. Officials from the Federation's side report various atrocities being committed against "hard-working businesspeople" and "brave patriots of Dahanno who don't submit to an ideology of laziness", but neither the Galactic Courier nor the Acta Asteriae, Khaldaarim Enelye, Vremya Polyary or Worker's Star, all currently operating in the region, were able to confirm the reports.
+
+The new socialist government has announced the beginning of public trials of former Federation high officers, to be concluded as quickly as is humanly possible. In the new government, interim ministers have stepped in, and will work to stabilize the chaotic situation still present in Dahanno.
+
+13 June 719 Third Empire (32,143 Common Era)
+--Acta Asteriae--
+EMPEROR LUCIUS ABDICATES!
+The Emperor of Asteria, Lucius Claudius Maximus, who has ruled Asteria since 658, announced his abdication from the Crystal Throne due to declining health, which he says was exacerbated by stress related to the Galactic War and internal instability. He will be succeeded by his heir, Princess Julia Claudia on 28 June, leaving an empire still ravaged by the Galactic War and republican factionalism, similar to that which nearly tore Khaldaar apart after Empress Caenyel's death.
+
+Lucius Claudius Maximus will be 89 years old on 1 July.
+
+9 March 728 Third Empire (32,152 Common Era)
+--Galactic Courier--
+A CASE FOR UNLIMITED ADVANCEMENT IN KHALDAAR?
+Yesterday, the Galactic Courier reported on the development of improved replicator missiles and a new distributed computing framework, in Khaldaar's effort to race with Asteria for faster and faster technological progress to tech 19 as defined by the Standard Technological Identification List (STIL). However, some are questioning if this rapid advancement of technology is worth the massive investments that it requires, just in 727 Khaldaar spent $300 quadrillion on R&D of various technologies, and if this money would be better spent on social programs for keeping Khaldaarim from falling into poverty, and industrial revitalization for Khaldaar's neglected traditional economy.
+
+The Galactic Courier attempted to reach Yuvin re Andasil, the Minister of Economy, but was unable to get a response. The Courier also contacted Saetheil re Noranthen, the Interior Minister of Khaldaar, who gave this response to us: "The circumstances of the cold war with Asteria demand that a higher percentage of the budget is dedicated to research, to prevent Asteria from getting an advantage and trying to launch a second Galactic War against us. We are doing everything to manage the budget in a way that would benefit all Khaldaarim."
+
+The Galactic Courier will continue to contact Khaldaar ministers and the Veleth Yarthel University for more opinions.
+
+11 March 728 Third Empire (32,152 Common Era)
+--Galactic Courier--
+A CASE FOR UNLIMITED ADVANCEMENT IN KHALDAAR, REVISITED
+The Galactic Courier released an article on 9 March (in Veleth Yarthel) about the increasing expenses of Khaldaar's arms race with Asteria, and considered if it could be better spent on bettering the Khaldaarim social situation, which is deteriorating due to increasing military expenses. Finally, the Galactic Courier was invited to an interview with the very Emperor of Khaldaar, Arayel re Lerathel for a brief interview about the ongoing arms race, and mutual attempts to defuse it before it erupts into a second Galactic War. Raesan Kethir was the representantive of the Galactic Courier.
+
+An audiovisual recording is available for the interview (29 MB audio, 146 MB 480p video, 1.1 GB HD video).
+
+...
+EMPEROR ARAYEL: "This is not our fault, it is the fault of the Asterians for escalating this arms race. We have told them repeatedly to stop development in line with the many treaties we have mutually signed, but they have ignored every request so far. I heard that you contacted Interior Minister re Noranthen, I'd like to echo his statement to you, we are doing literally everything we can to improve the lives of common Khaldaarim, but there is no money because of what I described earlier. Our taxes are as high as our citizens will tolerate, there'll be revolts if we raise them any higher, they already have little in disposable income."
+RAESAN: "Is there any way out of this vicious cycle, maybe a military operation?"
+EMPEROR ARAYEL: "We can't even launch a military operation to enforce the provisions of the treaties because that will cause a second Galactic War, and an unprovoked one! The Third Empire will have every reason to call on the rest of the Known Galaxy to invade us!"
+RAESAN: "How do you know they are ready to unleash all other states on Khaldaar?"
+EMPEROR ARAYEL: "They [the Third Empire] told us there would be immense retribution if we dared to make even one step into the territory of Asteria! We didn't even need our spies for that!"
+...
+
+The Galactic Courier will interview a Veleth Yarthel University professor in the next Courier publication.

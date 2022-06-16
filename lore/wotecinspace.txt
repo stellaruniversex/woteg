@@ -1,0 +1,1216 @@
+WotEG: War of the Eight Galaxies - "Like WotEC, but in SPACE!" - Valixor, 2022
+start date/milleu: 12 November 32108 CE (684 TE - after the founding of the (Third) Empire)
+
+-- really 32108 CE? --
+
+according to a very widespread conspiracy theory, the galaxy isn't *that* old, and 23,000 years have been added by the Khaldaarim (15,000 years) and the Third Empire (8,000 years) to allow them to fabricate incredibly long and impressive lists of powerful leaders and spread false legends about them. according to the conspiracy, the Second Empire only lasted for 3,976 years ("3650"-"7626 CE", the Interregnum only lasted for 500 years, and the gap between the end of the Second Empire ("7626 CE") and the founding of the Third Empire ("8424 CE") is only 798 years, not over 4,800 years as claimed by official histories.
+
+they cite the Third Empire's irrational ban on carbon-14 dating as proof of the coverup, noting that other dating measurements are allowed, as long as they're ambiguous enough to give an uncertainty that would corroborate the fabricated dates.
+
+-- Sector, System and Planet Generation --
+
+sectors: sectors range from 00-00-00 to 99-99-99, with Dahanno as 50-50-50. each sector is 100 light years across, containing around 2,000 stars on average. there are 1,000,000 sectors and 1,920,000,000 stars in the charted sectors, but some are known beyond this region, stars located in at least one negative sector number have the hyphen before the number changed to a plus, while those in sector num 100+ (or <-100) use 3 or even 4 digits (R136a1 is somewhere around S+1200+1200-800). for actual tabletop gameplay consider getting rid of the third dimension to make it a 2D plane (any stars at the same XY sector coordinates as the sector of the most populous star system will be destroyed, unfortunately), in this setup the known galaxy has around 3,000,000 star systems
+
+the Milky Way has 1,767,146 sectors, 482,854 sectors are outside the circle and are intergalactic, 125,663 are in the Inner Rim and 31,416 are in the Core, rest are in the Middle Rim, there are 640,099,300 accessible star systems in the Milky Way, of those 483,020,100 are in the Middle and Outer Rim, 100,530,400 in the Inner Rim and 56,548,800 are in the Core.
+384,059,580 have 1 star - total 384,059,580 stars
+128,019,860 have 2 stars - total 256,039,720 stars
+64,009,930 have 3 stars - total 192,029,790 stars
+32,004,965 have 4 stars - total 128,019,860 stars
+28,804,469 have 5 stars - total 144,022,345 stars
+2,880,446 have 6 stars - total 17,282,676 stars
+320,050 have 7 stars - total 2,240,350 stars
+for a total of 1,123,694,321 accessible stars in the Milky Way
+such a number of stars cannot be easily stored on a regular computer (roughly 250 GB for a Milky-Way sized galaxy), so they need to be procedurally generated, with only a small part of the galaxy saved at any time (Minecraft style), storing a full galaxy is best suited for a server, I'll try to make a compression algorithm...
+
+galactic sectors: rarely used for actual navigation (only UFOs from other galaxies go that far), each sector is a 1,000,000 ly cube, usually containing a handful of galaxies. they are labelled G-xx-yy-zz-nn, where xx, yy and zz are sector numbers and nn is galaxy number. this system can resolve galaxies in a volume 100,000,000 ly across. galactocentric stellar sectors originate from the origin point, which is S-5000-5000-5000, and need not be at the center of any galaxy (indeed they are usually in the intergalactic void). this is even more rarely extended to 4 or 5 digits, allowing areas of 100 billion ly (~ diameter of observable universe) to be resolved, but things become meaningless as nothing can travel across such distant galaxies yet. for actual tabletop gameplay consider getting rid of the third sector to make it a 2D plane
+
+universal sectors: why? WotEG isn't meant to work in whole *universes*! anyway, it would be defined the same as stellar and galactic sectors, but with a U at the start, e.g. U-50-50(-50), with no number after, as there's generally less than 1 universe per universal sector. locations inside a universal sector are defined using a 5-digit galactic sector location, in turn defined with a 4-digit stellar sector location. this could resolve areas of 10 *trillion* lightyears, but no computer in the near future can run the calculations needed for a full universal adventure, so whatever!
+
+naming: if star is A-class and smaller, has no planets and no significant features, use a generic classification S-xx-yy-zz-nnnn, where xx-yy-zz is the sector (100 light years cube), The One (Dahanno) is S-50-50-50-0001, in Federation of Dahanno territory
+if star is B-class and larger, it may be named after a divine or a concept. Deneb, in neutral territory, S+10-87-106-0007 is such a star (A2 Ia, age 10) (near Sol - S+18-80-90-0001, in neutral territory)
+if star has no planets but at least 1 significant feature, both the star system and feature is given the name of a natural feature, a major person or a property of the feature, in one of the common languages of the sector. Thalyana (Waste Star), near the edge of Stellar Republic of Caranetia, S-32-12-90-0133 is such a star (K6 V, age 8), with a now-inhabited ring of once-abandoned orbital habitats.
+if star is F-class and smaller, and has planets, but no inhabited and/or life bearing ones, and no special features, use a generic classification S-xx-yy-zz-nnnn, where xx-yy-zz is the sector (100 light years cube), e.g. S-76-26-34-0063 (M3 V, age 2) with 7 planets (3 terrestrial, all uninhabited and 4 gas giants, with no interesting moons), in Empire of Khaldaar territory
+
+-- parsec revision! --
+
+another way of defining stellar locations is to use parsecs instead, so there are 900 locations per sector. in this setup, there are 1,500,000 star systems in the known galaxy, and 561,847,160 stars in the Milky Way (1/2 as many, this significantly speeds up computation alone!), their population is doubled to compensate
+
+this means 1/10th (maybe 1/100th due to more efficient n^2 functions) as much computation *and* less empty space, but means locations less distant than 1 parsec (3.26 ly) will get destroyed, with only the most populous star system surviving
+
+-- star systems, finally! --
+
+for each sector, every light year roll a d100 (or 2 d10s, treating 1 as 0, and adding 1) to determine if a star system should be generated, if using 3d model: if sector is in the Middle or Outer Rim - d100 = 1, if sector is in Inner Rim - d100 = 1-2, if sector is in Core - d100 = 1-5
+if using 2d model: if sector is in Middle or Outer Rim - d100 = 1-3, if sector is in Inner Rim - d100 = 1-8, if sector is in Core - d100 = 1-18. the vanila WotEG area is in the Middle Rim, bordering on the Inner Rim
+
+if the sector is intergalactic, use a different method to determine number of star systems, roll a d20 to determine number of stars in sector, there are 5,069,967 star systems in the intergalactic sectors of the Milky Way
+
+usage: really, use a generator program to generate your solar systems, this is quite complicated
+
+units: all units are in metric (m - meters, km - kilometers, Mm - megameters (1000 km)) or SI (K - Kelvin (°C - 273.15))! (no inconvenient conversion factors please, thank you)
+
+there are 8 edge stars: -  - S-00-00-00-0001
+- S-99-00-00-0001
+- S-00-99-00-0001
+- S-00-00-99-0001
+- S-99-99-00-0001
+- S-99-00-99-0001
+- S-00-99-99-0001
+- S-99-99-99-0001
+or 4 edge stars in 2D:
+- S-99-00-0001 (Alpha Point)
+- S-99-99-0001 (Beta Point)
+- S-00-00-0001 (Gamma Point)
+- S-00-99-0001 (Delta Point), all in neutral territory
+
+roll D100 (or 2 D10s, treating 1-10 as 0-9) to get star classification (mostly realistic, but skewed to give more larger stars)
+1 - O-class
+2-3 - B-class
+4-6 - A-class
+7-10 - F-class
+11-20 - G-class
+21-40 - K-class
+41-100 - M-class
+
+then roll D20 to determine star count,
+1-12 - 1 star
+13-16 - 2 stars
+17-18 - 3 stars
+19 - 4 stars
+20 - 5+ stars
+if dice roll is 20, roll a D10, add 1 star if roll is 10 and continue, else end roll
+
+for each companion star, roll the same D100 to get star class, discard and roll again if star class is higher than main star, age is same as main star
+then roll D2 to determine if first companion is a close or distant binary, all others are distant, with their own solar systems
+
+next, roll D12 to determine star age:
+G, K and M classes: 1 billion years/point
+F-class: 500 million years/point
+A-class: 100 million years/point
+B-class: 20 million years/point
+O-class: 10 million years/point
+
+then lookup these tables that determines diameter (in x100 Mm or x100,000km), based on age:
+    1     2    3    4    5    6    7    8    9   10   11   12
+  -------------------------------------------------------------
+O |300 |360 |450 |600 |800 |1100|1400|1800|2500|4000|8000|9999| - 30 M-sun (12 age O-class star is 1,600,000,000 km in diameter, and more of a M-class supergiant)
+B |180 |220 |270 |350 |480 |650 |900 |1200|1800|3000|6500|8000| - 10 M-sun
+A |80  |100 |125 |160 |190 |225 |280 |400 |600 |850 |1500|3000| - 2.5 M-sun
+F |20  |22  |25  |28  |33  |40  |60  |85  |120 |180 |500 |1800| - 1.5 M-sun
+G |10  |11  |12  |13  |14  |16  |19  |25  |40  |100 |300 |1200| - 1 M-sun
+K |2   |2   |3   |4   |5   |7   |10  |12  |15  |19  |25  |35  | - 0.5 M-sun
+M |2   |1   |1   |1   |1   |1   |1   |1   |1   |1   |1   |1   | - 0.25 M-sun
+  -------------------------------------------------------------
+(Sol is a 5 age G-class star)
+
+which gives us the minimum orbit distance:
+    1     2    3    4    5    6    7    8    9   10   11   12
+  -------------------------------------------------------------
+O |3   |3   |3   |4   |4   |4   |5   |6   |7   |9   |11  |13  | - 30 M-sun (12 age O-class star is 1,600,000,000 km in diameter, and more of a M-class supergiant), temp +4
+B |2   |2   |2   |3   |3   |4   |4   |5   |6   |8   |10  |11  | - 10 M-sun, temp +3
+A |1   |1   |1   |2   |2   |2   |2   |3   |4   |4   |6   |8   | - 2.5 M-sun, temp +1
+F |0   |0   |0   |0   |0   |0   |0   |0   |0   |2   |3   |6   | - 1.5 M-sun
+G |0   |0   |0   |0   |0   |0   |0   |0   |0   |0   |2   |5   | - 1 M-sun
+K |0   |0   |0   |0   |0   |0   |0   |0   |0   |0   |0   |0   | - 0.5 M-sun, temp -2
+M |0   |0   |0   |0   |0   |0   |0   |0   |0   |0   |0   |0   | - 0.25 M-sun, temp -4
+  -------------------------------------------------------------
+
+if planet is O-class, roll d20 to determine special type:
+
+1-12 - normal O-class star (temp +4)
+13-15 - luminous variable (temp +5)
+16-17 - Wolf-Rayet star (temp +7)
+18 - helium-carbon star (temp +5)
+19 - pulsating O-class star (temp +5)
+20 - carbon star (temp +5)
+
+below is important for hyperlane generation:
+O-class stars are the most powerful known natural hyperlane generators, branching to all other O-class stars within 250 ly and one B-class star
+B-class stars branch to any other B-class star connected to an O-class star (directly or indirectly), as well as one A-class star
+A-class stars branch to any other A-class star connected to an B-class star (directly or indirectly), as well as one F-class star
+F-class stars branch to any other F-class star connected to an A-class star (directly or indirectly), as well as one G-class star
+and so on until M-class:
+M-class stars branch to any other M-class star connected to an K-class star (directly or indirectly)
+
+(tidal locking or really at what timespan it happens is *really* poorly understood, assume initial rotation period is 8 h, 0.000218 r/s, or 218 microradians per second)
+
+t_lock ~= 4.5*(a^6*R*mu)/(m_s*m_p^2)*10^10 y, take 3*10^10 N*m^-2 if planet is >50% rocky, 4*10^9 N*m^-2 if planet is >50% icy
+
+expected tidal-lock time for Earth ~= 4.5*((1.49*10^11 m)^6*6.371*10^6 m*3*10^10 N*m^-2)/(1.99*10^30*(5.972*10^24)^2) * 10^10 ~= 1,327,000,000,000,000 years ~= 1.327 quadrillion years
+yeah, don't bother with the boring calculations, just lookup another table that tells what's the smallest rocky and icy planet respectively (size in x1000 km) that will get tidal-locked at 5 billion years
+(insert table here)
+    1
+  ----
+O | X|
+B |
+A |
+F |
+G |
+K |
+M |
+actually don't bother with tidal locking at all, just leave it to a diceroll: D20-2*d+c (d = distance given below, c = star class, M is 0, O is +6)
+
+do the tidal lock check if:
+M-class: d < 5
+K-class: d < 5
+G-class: d < 6
+F-class: d < 7
+A-class: d < 8
+B-class: d < 9
+O-class: d < 10
+
+if the modified roll is >10, then planet is tidal-locked, between 8-9 it is spin-locked (partial tidal locking), if planet is tidal locked then habitable area is reduced by 70%
+
+roll D12 to determine planet number, then add/subtract modifer based on star class:
+-4 for O-class
+-3 for B-class
+-2 for A-class
+-1 for F-class
+0 for G-class
++1 for K-class
++2 for M-class
+roll D20 to determine distance from star (if planet is within 110% of star diameter, discard and roll again)
+
+planet distance: roll a D20 to determine, if same as another planet discard and roll again
+K-class stars cannot have planets at more than 19 distance, M-class at more than 18, if >19 & >18 respectively discard and roll again
+1 - <0.05 AU
+2 - 0.05-0.1 AU
+3 - 0.1-0.2 AU
+4 - 0.2-0.35 AU
+5 - 0.35-0.5 AU
+6 - 0.5-0.7 AU
+7 - 0.7-1 AU
+8 - 1-1.4 AU
+9 - 1.4-1.8 AU
+10 - 1.8-2.5 AU
+11 - 2.5-3.5 AU
+12 - 3.5-5 AU
+13 - 5-7 AU
+14 - 7-10 AU
+15 - 10-15 AU
+16 - 15-20 AU
+17 - 20-30 AU
+18 - 30-45 AU
+19 - 45-70 AU
+20 - >70 AU
+
+planet type: roll a D20
+1-5 - iron-silicate terrestrial planet (5000 kg/m^3, +0 to mass)
+6-9 - silicate terrestrial planet (3000 kg/m^3 -1 to mass)
+10-11 - iron terrestrial planet (8000 kg/m^3, +1 to mass)
+12-13 - icy terrestrial planet (1500 kg/m^3, -3 to mass, -2 to temp), if t > 9 a waterworld (water level 20), with exotic ice forming the "surface"
+14-20 - gas planet
+
+if planet is terrestrial: roll a d20 to determine diameter, 1 = 1000 km, 20 = 20000 km
+
+if planet is gaseous: roll a d20 to determine diameter, 1 = 10000 km, 20 = 200000 km
+
+(d = diameter)
+
+terrestrial mass = d+planet type:
+
+1 - <0.05 Earth (-6 water level)
+2 - <0.05-0.12 Earth (-5 water level)
+3 - 0.12-0.2 Earth (-4 water level)
+4 - 0.2-0.3 Earth (-3 water level)
+5 - 0.3-0.4 Earth (-2 water level)
+6 - 0.4-0.5 Earth (-1 water level)
+7 - 0.5-0.65 Earth (-1 water level)
+8 - 0.65-0.8 Earth
+9 - 0.8-1 Earth
+10 - 1-1.2 Earth (+1 water level)
+11 - 1.2-1.4 Earth (+1 water level)
+12 - 1.4-1.7 Earth (+1 water level)
+13 - 1.7-2 Earth (+2 water level)
+14 - 2-2.4 Earth (+2 water level)
+15 - 2.4-2.9 Earth (+2 water level)
+16 - 2.9-3.5 Earth (+3 water level)
+17 - 3.5-4.2 Earth (+3 water level)
+18 - 4.2-5 Earth (+4 water level)
+19 - 5-6 Earth (+4 water level)
+20 - >6 Earth (+5 water level)
+
+for terrestrial planets, roll d6 to determine number of major moons:
+1-3 - no major moons
+4-5 - 1 major moon
+6 - 2+ major moons
+if a 6 is rolled, keep rolling a d6, if 6 is rolled add another moon, otherwise end roll
+fallback (very unlikely to be needed): if all orbital slots are filled, stop rolling!
+
+a moon around a terrestrial planet cannot have more than m-12 (m is planet mass) after accounting for moon composition, if m is 9, 10, 11 or 12 max moon mass is 1, they also receive no tidal heating (they'd be ripped apart at a point where they receive significant tidal heating)
+the moon distance is the distance for moons around gaseous planets, divided by 10 (Moon/Luna orbits Earth at distance 11 (384,000 km)
+if a major moon is orbiting a planet, any tidal locking modifiers are ignored, and the planet day is equal to the first moon's orbital period
+
+terrestrial mass and gravity = d-2+planet type if size - 11-13, d-1+planet type if 8-10 or 14+, d+planet type if <8, 1 = 0.1 g, 20 = 2 g
+for gravity below 10, general build cost decreases by 5%, for gravity above 10, general build cost increases by 10%
+
+gaseous mass = d
+
+1 - <0.5 Earth
+2 - <0.5-1.2 Earth
+3 - 1.2-2 Earth
+4 - 2-3 Earth
+5 - 3-5 Earth (+1 tidal heating)
+6 - 5-9 Earth (+1 tidal heating)
+7 - 9-15 Earth (+1 tidal heating)
+8 - 15-25 Earth (+1 tidal heating)
+9 - 25-45 Earth (+2 tidal heating)
+10 - 45-80 Earth (+2 tidal heating)
+11 - 80-125 Earth (+3 tidal heating) ~ Saturn
+12 - 125-175 Earth (+3 tidal heating)
+13 - 175-250 Earth (+4 tidal heating)
+14 - 250-375 Earth (1.2 Jupiter) (+4 tidal heating)
+15 - 1.2-1.7 Jupiter (+5 tidal heating)
+16 - 1.7-2.5 Jupiter (+6 tidal heating)
+17 - 2.5-3.5 Jupiter (+7 tidal heating)
+18 - 3.5-4.8 Jupiter (+8 tidal heating)
+19 - 4.8-6 Jupiter (+9 tidal heating)
+20 - >6 Jupiter (+10 tidal heating)
+
+for gaseous planets, roll d8-1 to determine number of major moons, 0 means no major moons, 7 means 7 major moons, do the calculations for all of them
+maximum moon diameter is gaseous mass - 2 (m_g-2), a Jupiter-sized (14) gas planet cannot have a planet larger than 12,000 km, if moon diameter is larger than the limit discard and roll again
+
+moon distance: roll a D20 to determine, if same as another major moon discard and roll again
+gravity well does not allow moons to orbit at a distance of more than m+4 (gaseous planet mass), for a Jupiter-sized planet 18 - 30,000,000 km
+1 - 150K-250K km
+2 - 250K-350K km
+3 - 350K-500K km
+4 - 500K-650K km
+5 - 650K-850K km
+6 - 850K-1.1M km
+7 - 1.1-1.4M km
+8 - 1.4M-1.8M km
+9 - 1.8M-2.4M km
+10 - 2.4M-3M km
+11 - 3M-4.5M km
+12 - 4.5M-6M km
+13 - 6M-8M km
+14 - 8M-10M km
+15 - 10M-13M km
+16 - 13M-17M km
+17 - 17M-23M km
+18 - 23M-30M km
+19 - 30-50M km
+20 - >50M km
+
+base temperature (t_base) is 16+r_s+s_m-dist+p_type, r_s is the minimum orbit distance the star reaches (for The One/Dahanno - 0, UY Scuti - 14), s_m is the extra heat due to high luminosity, p_type is planet type (albedo), add tidal heating (t_tid-d) if a moon. if t < 0 after all modifiers then t = 0, if t > 20 then the temperature is 750+(t-20)*5, eg. t = 25 -> 750+(25-20)*150 = 1500 K
+
+temperature:
+1 - 0-45 K, life -3
+2 - 45-77 K, life -3
+3 - 77-100 K, life -3
+4 - 100-125 K, life -3
+5 - 125-160 K, life -2
+6 - 160-200 K, life -2
+7 - 200-240 K, life -1
+8 - 240-260 K
+9 - 260-280 K
+10 - 280-300 K
+11 - 300-320 K
+12 - 320-350 K, life -1
+13 - 350-380 K, life -1
+14 - 380-425 K, life -2
+15 - 425-475 K, life -3
+16 - 475-525 K, life -3
+17 - 525-575 K, life -4
+18 - 575-650 K, life -5
+19 - 650-750 K, life -6
+20 - >750 K, life -7
+temperatures between 9 and 11 are habitable for human and elven people without any modification, between 8 and 12 with slight planetary modification (extra CO2, sunshields etc.), Earth is temp 10, Venus is temp 19, Mars is temp 7
+if temperature after all modifiers is >24 (>1350 K), then life (even complex life!!!) can appear in molten silicon, temperature-induced life modifier in that case is +0
+
+there is a chance that the planet has undergone runaway greenhouse effect, roll a d20, modified by (t_b-10)+(atm-10) (t_b - effective temperature, atm - atmospheric pressure). if value is >12, then the planet's temperature is increased by 10
+if planet has CO2 atmosphere and 14+ pressure, as well as base temperature of 300K and above, it undergoes runaway greenhouse effect regardless of roll, increasing temperature to either 18 (if t_base = 250-300K), 19 (if t_base = 300-400K), or 20 (if t_base > 400K)
+if t < 9, the planet may still have a subglacial ocean, roll d10+t, if roll >= 10 then planet has a subglacial ocean (max life level 10), otherwise planet is completely frozen (max life level 6), neither case requires an atmosphere (Europa has a subglacial ocean)
+
+atmospheric pressure is determined by d20+grav-10, with a maximum of m*2, where m is planet mass
+
+atmospheric pressure:
+1 - <0.05 atm
+2 - 0.05-0.15 atm
+3 - 0.15-0.25 atm
+4 - 0.25-0.325 atm
+5 - 0.325-0.4 atm
+6 - 0.4-0.5 atm
+7 - 0.5-0.6 atm
+8 - 0.6-0.7 atm
+9 - 0.7-0.85 atm (temp +1)
+10 - 0.85-1.2 atm (temp +1)
+11 - 1.2-1.5 atm (temp +1)
+12 - 1.5-1.8 atm (temp +1)
+13 - 1.8-2.1 atm (temp +1)
+14 - 2.1-2.5 atm (temp +1)
+15 - 2.5-3.5 atm (temp +2)
+16 - 3.5-5 atm (temp +2)
+17 - 5-8 atm (temp +2)
+18 - 8-12 atm (temp +2)
+19 - 12-50 atm (temp +3)
+20 - 50-70 atm (temp +4)
+
+above 20, atmosphere is 50+(atm-20)*20, Venus is atm 23 (92 atm)
+
+final temperature, if no runaway heating occurs, is t_base+t_atm.
+
+if the planet *should* have water but atm = 1, then check t_base: if t < 9 then planet may have a subglacial ocean, if t > 9 then water sublimates, creating an atmosphere with water vapor as its main component. as a very good greenhouse gas, the roll to check for runaway heating increases by 5
+
+if planet is lifeless and atmosphere >1, roll d6 to determine (highly toxic) atmosphere:
+1 - CO2
+2 - methane
+3 - sulfur dioxide
+4 - chlorine
+5 - nitrogen oxides
+6 - hydrocarbon
+
+if planet is very cold, these are the gases that make up the atmosphere
+t = 1-3 - hydrogen
+t = 4 - nitrogen, methane
+
+if planet has life, the atmosphere depends on the base substance used:
+water (common) - nitrogen-oxygen, argon-oxygen or carbon-oxygen (CO2 > O2) (life level +2), possible if atm > 1 and t = 8-13
+CO2 (uncommon) - carbon-oxygen (CO2 synthesized into carbon and oxygen) (life level +0), possible if atm = 17-20 and t = 7-8
+methane (uncommon) - hydrogen-carbon (carbon absorbed by life) (life level +0), possible if t = 3-4
+molten silicon! (*very* rare) - silicon-oxygen (gaseous ROCK, nice) (life level -1), possible if t >= 24 (1350 K)
+
+water: d12+p_modifier+t_modifier-2, p_modifier is change in water level based on planet mass, t_modifier is change in water level based on temperature
+
+water level:
+
+0 - no water
+1 - 10% water
+2 - 20% water
+3 - 30% water
+4 - 40% water
+5 - 50% water
+6 - 60% water
+7 - 70% water (Earth)
+8 - 80% water
+9 - 90% water
+10 - 95% water
+11 - 100% water, min depth 50 m
+12 - 100% water, min depth 1 km
+13 - 100% water, min depth 2 km
+14 - 100% water, min depth 3 km
+15 - 100% water, min depth 5 km
+16 - 100% water, min depth 7 km
+17 - 100% water, min depth 10 km
+18 - 100% water, min depth 15 km
+19 - 100% water, min depth 20 km
+20 - 100% water, min depth 30 km
+
+water levels are determined by atmospheric pressure and temperature, maximum total temperature at which water can exist under standard pressure. if water doesn't boil at that temperature, each 2 levels of temperature above 10 reduce water level by 1. if no liquids can exist at the given temperature, planet contains no subglacial oceans or even just no planet-wide glaciers, life level is locked to 0
+
+higher temperature decreases water level due to high evaporation, if water level is <1 after modifiers, then water level is locked to 1
+11 - water level -1
+12 - water level -2
+13 - water level -3
+14 - water level -4
+15+ - water level -5
+
+(10 pressure - 1 atm) is 12
+at 12-14 pressure - 1.5-2.5 atm is 13 (water level -1)
+15-16 - 2.5-5 atm is 14 (water level -2)
+17-18 - 5-12 atm is 15 (water level -2)
+19-20 - 12-60+ atm is 16 (water level -3)
+6-9 - 0.4-0.85 atm is 11
+2-5 - 0.05-0.4 atm is 10
+outside minimum temperature (8) all water is frozen, outside maximum temperatue all water is gaseous
+
+life level:
+
+roll d20+mod+bas-4+t
+where mod is age/2 (for M, K and G-class), age/4 (for F-class), age/10 (for A-class), and age/20 (for B and O-class), mod is limited to 5, bas is the base substance, t is final temperature, if water level > 10 life level is locked to 18 (can't develop civilization without land), if water level > 14 life level is locked to max 10, if water level > 17 life level is locked to max 6
+
+0 - no life
+1 - proto-life (Hadean)
+2 - primordial unicellular (Hadean)
+3 - prokaryotic unicellular (Archean)
+4 - eukaryotic unicellular (Paleo-Mesoproterozoic)
+5 - complex unicellular (early Neoproterozoic)
+6 - early multicellular (Cryogenian)
+7 - simple oceanic (Cryogenian)
+8 - oceanic bilateral (Ediacaran)
+9 - advanced oceanic (Cambrian-Ordovician)
+10 - ocean-land plants (Ordovician-Silurian)
+11 - simple land creatures (Silurian)
+12 - amphibious creatures (Devonian)
+13 - early terrestrial (Carboniferous)
+14 - generalist terrestrial (Permian) - eg. common staneosaur (Vollata, Staneosaurus vollatis)
+15 - terrestrial megafauna (Triassic) - eg. taiga mammoth (Polyara, Mammuthus primigenius)
+16 - apex terrestrial (Jurassic-Cretaceous) - eg. domestic cat (everywhere, Felis catus domesticus)
+17 - early intelligence (Paleogene)
+18 - developed intelligence (Neogene) - eg. Maedarian dragon (Dahanno, Draco maedarius)
+19 - behavioral modernity (Pleistocene) - eg. Cairotian Dolphins (Haegrentum, Tursiops truncatus cairotus)
+20 - native civilization (Holocene) - eg. Khaldaarim/Elves (everywhere, Homo sapiens khaldaarus)
+
+intelligent life appears only in certain circumstances, if life roll is >16, roll a d6, if dice roll is 1-2, life level can be between 17-20, else it is locked to 16
+
+if a native civilization exists on the planet, roll d6 to determine dominant species (cosmetic only):
+1 - mammal
+2 - reptilian
+3 - avian
+4 - insectoid
+5 - aquatic
+6 - amphibian
+
+roll d12 to determine tech level:
+1 - Bronze Age (3000 BCE-1000 BCE) - pop 7
+2 - Iron Age (1000 BCE-500 BCE) - pop 8
+3 - Classical (500 BCE-500 CE) - pop 8
+4 - Early Medieval (500-1200) - pop 8
+5 - Late Medieval/Renaissance (1200-1500) - pop 8
+6 - Gunpowder Age (1500-1650) - pop 8
+7 - Enlightenment (1650-1750) - pop 8
+8 - Industrial Age (1750-1900) - pop 9
+9 - Modern Age (1900-1940) - pop 9
+10 - Atomic Age (1940-1990) - pop 9
+11 - Information Age (1990-2100) - pop 10
+12 - Warp Age (2100-2250) - pop 11
+
+if tech level is 9 (Modern Age), civilization has 10% chance (10 on a d10) to have a spacecraft in space, if tech level is 10, civilization has spacecraft in space and 50% chance (6-10 on a d10) to have a minor base on the closest planet (by distance, prioritize furthest if two exist 1 distance level apart from main planet) with temperature <= 15, if tech level is 11, civilization has spacecraft in space, a minor base on the closest planet (more distant planet goes first) with temperature <= 15, and up to (and including) d6-1 additional minor bases on planets with temperature <= 15, if not enough suitable planets exist then the number is the amount of suitable planets, if tech level is 12, civilization has colonies with 7 population (10s of millions) on d6 additional star systems, each on one planet, if d6 roll is 6 then planet is terraformed to temperature, pressure and atmosphere of the main planet
+
+-- Ancient Artifacts --
+
+between sectors 50-9 and 53-13, there is an area of largely untouched arcane structures built during the Second Empire, with tech level believed to be between 24 and 26 (maximum in known galaxy is 18). a large number of these structures are defensive systems that have gone rogue in the years after the Second Empire's collapse, making entry into any part of these sectors extremely dangerous.
+
+for every star system in this sector, roll a d20 to determine what kind of ancient artifact will be generated:
+
+1-10 - nothing
+11-13 - starlifting mine (increases tech level in capital by one-time 1 level, up to 22, can be repaired at tech 19 to a functioning starlifter)
+14-16 - solar habitat (can be repaired at tech 19 to a functioning partial habitat, and fully rebuilt at tech 22, 2 tech levels lower than normal)
+17-20 - rogue defensive system (star system outfitted with Antimatter Missile, all types of anti-FTL devices, Antimatter Gun, Space Fort IV and Planetary Shield Network on all planets, as well as Hawking Cannons in the entire inner solar system. if civilization defeats this system it will receive level 20, or 2 tech levels increase whichever results in higher final level, up to 28, military tech)
+
+-- Item rarity --
+
+Common (current tech) - most items are of this rarity, no special modifiers
+Legendary (early post-Imperial) - a highly valuable, powerful item (tech 20-24) made from the scavenged remnants of Second Empire vehicles and buildings, featuring some of the technologies available in the Second Empire.
+Legendary (Second Empire) - a highly valuable, powerful item (tech 23-28) from the last years of the Second Empire. items taken from Ancient Artifacts are at least of this rarity
+Mythic (Second Empire) - an extremely valuable item (tech 17-22) from the early Second Empire.
+Mythic (Interregnum) - an extremely valuable item (tech 12-16) from the incredibly long period of chaos and disorder lasting between the First Empire's collapse in 3150 CE and 250 SE (21575 CE), when the Empire of the Stars (Second Empire) began stabilizing the region. endless conflict, constant invasions from outside the Known Galaxy and natural catastrophes prevented any advancement, until a lucky series of events around 21000 CE created the conditions for the formation of a long-lived state.
+Mythic (early Interregnum) - an insanely valuable item (tech 12-16) from the early Interregnum, to around 4500 CE, when memories of the First Empire were still vivid and numerous pretenders tried to restore it, none successfully.
+Mythic (First Empire) - an insanely valuable item (tech 12-16) that has survived intact from the First Empire (2396-3150 CE), mostly aesthetic rather than functional (First Empire tech was max 16), these items can fetch over $1 billion at auction
+Mythic (pre-Imperial) - an insanely valuable item (tech 12-15) from the non-human empires that inhabited (and still inhabit to some degree) before the First Empire, around 2500 BCE (Old Balanic Empire) to 2000 CE (Second Great War)
+Ultimate (pre-Imperial) - an unfathomably valuable item (tech 12-16) from the palaces of pre-First Empire states, 3 of the 12 Heaven Jewels have been found as of 32108, the others are still scattered in the territory of the former Second Empire.
+Ultimate (Ancient Realm) - an unfathomably valuable and powerful item (tech 22-30) from the elven Ancient Realm (Cala Alathya), around 10,000 BCE to 2500 BCE.
+Ultimate (Second Empire) - the Shatterer of Realms (tech 29?), a superweapon of untold power described in surviving Imperial mythology, believed to be around sector 205+80 (x=205, y=-80) with a 30-sector (3,000 ly) uncertainty.
+Ultimate (The Toreaanet) - an unfathomably valuable item (tech 18-23) from the Stellar Toreaanet, which is believed to have existed from 28,000 BCE, to 2446 CE when it was conquered by the First Empire and allies. due to their usefulness as wormhole stabilizers for the Second Empire during the Wormhole Age, only a handful of Toreaanet items are left in remote areas
+Divine (Kingdom of the Dawn) - an item (tech ??) from the Kingdom of the Dawn, a galaxy-spanning empire with unknown origin that ceased existing before 34,000 BCE. no items of this rarity have yet been found despite extensive searches, and only a survey for their potential signals have given any clues as to where their capital was (x=554, y=125, with a 300-sector uncertainty)
+
+-- Spacecraft Travel --
+
+interstellar travel is done using warp drives, hyperlane drives, jump drives or wormholes. warp drives are the most flexible and most scalable (used in everything from personal jetpacks to the largest dreadnoughts), but also the slowest for now, hyperlane drives are fast, but are locked to hyperspace lanes, jump drives are extremely fast, but extremely expensive, take a long time to recharge and demand huge amounts of energy, and wormholes have unlimited speed (capable of travelling even trillions of light years!!!), but are very difficult to deploy, extremely expensive and can only travel between two destinations
+
+tech notes below:
+Sentient Age refers to highly aware computers, with multi-dimensional thought. AGI was perfected long ago, in the early Warp Age
+Stellar Age refers to the beginning of star exploitation, with limited starlifting used to generate large resource quantities
+Mega(structure) Age refers to the extensive construction of large-scale structures, such as shellworlds and planetary refineries, towards the end of stellar-scale structures such as Dyson swarms (true Dyson spheres aren't possible until Tech 32)
+Vacuum Age refers to the discovery of economical vacuum energy extraction, which can be used to power extremely powerful FTL drives
+
+powers of c (speed of light) - various measurements previously, now standardized to 6^n-1 c, where n is tier of FTL drive
+e.g. tier 5-2 (the galactic standard in 32108) FTL drive is 6^(5-1) * 2 = 2592 c, tier 6-5 (cutting-edge limit in 32108) FTL drive is 6^(6-1)*5 = 38,880 c (rounded up to 39K c normally)
+also given is the time needed to cross the Milky Way (150,000 lightyears) with the most powerful drive of that tier at a constant rate (not applicable in reality, especially for hyperlane and jump drives; hyperlane drives often need to take circuitous routes, current jump drives take weeks to recharge (the Khaldaarim Yonthil-class cruiser/tech 18 takes just 6 days to recharge))
+after tech 23 or so, the average FTL drive begins to lag from the most advanced drives by about 1 tier, due to increasing expenses, after tech 31 by 2 tiers, tech 38 by 3 tiers
+everything above Tech 29 (Second Empire max) is extrapolated based on expected trends
+if a warp field is disrupted by a sufficiently strong gravitational force (i.e. neutron stars or black holes) the consequences of an FTL spacecraft being outside a warp bubble create a black hole equal to the mass of the spacecraft, which violently explodes after some time (8 hours for an Interexp-class, 402.6 days for an Arayel-class)
+-----------------------------------
+tier 1 - 1-6 c (25,000 years)
+Warp 1, end Information Age/early Warp Age (~2100)/Tech 11
+-----------------------------------
+tier 2 - 6-36 c (4,200 years)
+Warp 2, mid Warp Age (~2160)/Tech 12
+-----------------------------------
+tier 3 - 36-216 c (694 years)
+Warp 3, late Warp Age (~2225)/Tech 12
+-----------------------------------
+tier 4 - 216-1296 c (115 years)
+Warp 4, early Hyper Age (~2350)/Tech 13
+-----------------------------------
+tier 5 - 1296-7776 c (20 years) - most ships in 32108 have this tier of drive, usually tier 5-1 or 5-2
+Hyperlane 1, early Hyper Age (~2350)/Tech 13
+Warp 5, late Hyper Age (~2450)/Tech 14
+-----------------------------------
+tier 6 - 7776-47K c (3.2 years)
+Hyperlane 2, early Jump Age (~2700)/Tech 15
+Warp 6, early Sentient Age (~3300)/Tech 17
+Jump 1, early Jump Age (~2700)/Tech 15
+-----------------------------------
+tier 7 - 47K-280K c (6.5 months/196 days)
+Hyperlane 3, mid Sentient Age (~3500)/Tech 18
+Warp 7, early Stellar Age (~5000)/Tech 21
+Jump 2, early Sentient Age (~3300)/Tech 17
+-----------------------------------
+tier 8 - 280K-1680K c (33 days)
+Hyperlane 4, late Sentient Age (~4400)/Tech 20
+Warp 8, early Wormhole Age (~8000)/Tech 24
+Jump 3, mid-late Sentient Age (~4000)/Tech 19
+-----------------------------------
+tier 9 - 1680K-10.1M c (5.5 days)
+Hyperlane 5, early Wormhole Age (~7000)/Tech 24
+Warp 9, early Mega Age (~12000)/Tech 27
+Jump 4, early Stellar Age (~5000)/Tech 21
+Wormhole 1, early Wormhole Age (~8000)/Tech 24
+-----------------------------------
+tier 10 - 10.1M-60.5M c (22 hours)
+Hyperlane 6, late Wormhole Age (~11000)/Tech 27
+Warp 10, mid Galactic Age (~17000)/Tech 31
+Jump 5, early Wormhole Age (~8000)/Tech 24
+Wormhole 2, mid Wormhole Age (~9000)/Tech 25
+-----------------------------------
+tier 11 - 60.5M-363M c (217 minutes)
+Hyperlane 7, mid Galactic Age (~17000)/Tech 31
+Warp 11, late Vacuum Age (~21000)/Tech 35
+Jump 6, early Mega Age (~12000)/Tech 27
+Wormhole 3, late Wormhole Age (~10000)/Tech 26
+-----------------------------------
+tier 12 - 363M-2177M c (36 minutes)
+Hyperlane 8, late Vacuum Age (~21000)/Tech 35
+Warp 12, early Intergalactic Age (~28000)/Tech 39
+Jump 7, early Galactic Age (~16500)/Tech 30
+Wormhole 4, early Mega Age (~12000)/Tech 27
+-----------------------------------
+tier 13 - 2177M-13.1B c (6 minutes)
+Hyperlane 9, late Cluster Age (~26000)/Tech 38
+Warp 13, mid Dimensional Age (~34000)/Tech 43
+Jump 8, early Vacuum Age (~19000)/Tech 33
+Wormhole 5, mid Mega Age (~14000)/Tech 28
+-----------------------------------
+tier 14 - 13.1B-78.4B c (1 minute)
+Hyperlane 10, late Intergalactic Age (~32000)/Tech 41
+Warp 14, mid Supercluster Age (~37000)/Tech 46
+Jump 9, early Cluster Age (~22500)/Tech 36
+Wormhole 6, late Mega Age (~15500)/Tech 29
+-----------------------------------
+tier 15 - 78.4B-470B c (10 seconds)
+Hyperlane 11, late Dimensional Age (~35000)/Tech 44
+Warp 15, late Reality Age (~41000)/Tech 50
+Jump 10, early Intergalactic Age (~28000)/Tech 39
+Wormhole 7, mid Galactic Age (~16500)/Tech 31
+-----------------------------------
+tier 16 - 470B-2821B c (1.7 seconds)
+Hyperlane 12, late Supercluster Age (~38000)/Tech 47
+Warp 16, early Universal Age (~45000)/Tech 54
+Jump 11, early Dimensional Age (~33000)/Tech 42
+Wormhole 8, early Vacuum Age (~19000)/Tech 33
+-----------------------------------
+tier 17 - 2821B-16.9T c (275 miliseconds)
+Hyperlane 13, late Reality Age (~41000)/Tech 50
+Warp 17, mid Superreality Age (~49000)/Tech 58
+Jump 12, mid Supercluster Age (~37000)/Tech 46
+Wormhole 9, early Cluster Age (~22500)/Tech 36
+-----------------------------------
+tier 18 - 16.9T-102T c (46 miliseconds)
+Hyperlane 14, late Origin Age (~44000)/Tech 53
+Warp 18, mid Multiversal Age (~52000)/Tech 61
+Jump 13, late Reality Age (~41000)/Tech 50
+Wormhole 10, early Intergalactic Age (~28000)/Tech 39
+-----------------------------------
+tier 19 - 102T-609T c (7.6 miliseconds)
+Hyperlane 15, late Universal Age (~47000)/Tech 56
+Warp 19, Age of Ascension (???)/Tech 64
+Jump 14, early Universal Age (~45000)/Tech 54
+Wormhole 11, early Dimensional Age (~33000)/Tech 42
+-----------------------------------
+tier 20 - 609T-3656T c (1.3 miliseconds/13.4 minutes to cross diameter of observable universe) - max FTL tier
+Hyperlane 16, early Multiversal Age (~51000)/Tech 60
+Warp 20, Beyond (???)/Tech 67
+Jump 15, mid Superreality Age (~49000)/Tech 58
+Wormhole 12, mid Supercluster Age (~37000)/Tech 46
+
+the most advanced FTL drive in use in major states is Warp 5-6 (20 years) and Jump 1-2 (10 years), both available at tech 16, across the Known Galaxy as of 32108, the most advanced FTL drive in use (tech 18) is Hyperlane 3-1 (3.2 years), Warp 6-5 (3.86 years) and Jump 2-3 (1.07 years). the most advanced FTL drive used by the Second Empire (27301) was Hyperlane 6-2 (2.7 days), Warp 9-3 (10.8 days), Jump 6-3 (7.2 hours) and Wormhole 5-1 (36 minutes, but *very* difficult to build)
+
+wormholes are the only exception to the tier 20 FTL limit, after Tech 46, every 3 tech levels a higher tier of wormholes is developed, the highest possible before Beyond is Wormhole 18, at FTL tier 26 and Tech Level 64, in the Age of Ascension, capable of crossing 5.4 trillion light years per second (170,581,728,179,578,208,256 c). such a civilization would likely also be using even more advanced methods of travel, still unknown to current science, and it is also believed wormholes would also be much easier to make than they were during the Second Empire.
+
+in the late Universal Age (tech 56), jump drives take just 4 hours to recharge and can traverse roughly 5 billion lightyears, empire size may be around 2 weeks jump travel, i.e. 2*420,000M lightyears = 840,000M lightyears in max diameter, covering around 1.5 quadrillion galaxies with 1.5 septillion stars, all covered with Dyson spheres and Birch planets to make a Kardashev IV+ civilization with a population of >10^46 people
+2.356*10^44 - population on Birch planets
+2.121*10^46 - population on Dyson spheres
+
+-- Sphere of Influence --
+related to the above as it depends on the FTL drive and the tier-level.
+
+the maximum reach of direct control that a civilization can exert effectively is equal to 120 days one-way distance (240 days round-trip) from the capital to the sector center, with the fastest FTL drive available to the civilization that is of the most common type used (if the most common FTL drive is warp, then the highest warp drive will be considered, if jump, then the highest jump drive will be considered).
+the maximum reach of frontier control (maximum possible territorial control) is 180 days one-way distance (360 days round-trip) from the capital to the sector center with the fastest FTL drive available
+the maximum reach of influence (beyond which a civilization cannot effectively influence a sector) is 360 days one-way distance (720 days round-trip) from the capital to the sector center with the fastest FTL drive available
+
+e.g. the maximum tech level of Asteria is level 17, and the fastest FTL drives available are Hyperlane 2-6, Warp 6-1 and Jump 2-2. the most common type of FTL drive used is warp, so distances will be determined in terms of days of constant Warp 6-1 travel (7,776 c or 21.3 ly/day).
+
+max reach of direct control - 2,556.5 ly
+max reach of frontier control - 3,834.7 ly
+max reach of influence - 7,669.5 ly
+
+-- strategic materials --
+
+-- Tech 8-12 strategic materials --
+Coal - common, a simple but highly polluting way of generating electricity, found on all planets with life level 11-20 (min tech 8)
+Oil - common, a simple but highly polluting way of generating electricity and powering vehicles, found on all planets with life level 11-20 (min tech 9)
+Natural Gas - common, a highly flammable hydrocarbon mix, less polluting than coal or oil
+Iron - common, basic construction material for vehicles
+Aluminum - uncommon, advanced construction material for aircraft and spacecraft
+Steel - basic, all-purpose construction material, made from iron and coal
+Lithium - uncommon, found mainly on warm (t = 10-14) planets, used in batteries in normal form,
+Lithium-6 - extremely rare naturally, usually enriched from lithium-7, used in thermonuclear bombs
+Silicon - very common in crust, uncommon in quartz form, used in semiconductors
+-- Tech 12-17 strategic materials --
+Uranium - uncommon, but found everywhere, used in small-scale ships (<1000 tonnes currently) and domestic-scale reactors. the Great Uranium War (30335-30339) was fought over a planet consisting of 75% uranium and other radioactive materials
+because uranium decays with time, when doing a uranium roll for a planet, add these modifiers:
+age 1: +3
+age 2: +1
+age 3-4: +0 (1 half-life)
+age 5-6: -1
+age 7-8: -2 (2 half-lives)
+age 9-10: -3
+age 11-12: -4 (3 half-lives)
+Thorium - uncommon, but found everywhere, used in reactors where stability is a major priority
+because thorium decays with time, when doing a thorium roll for a planet, add these modifiers:
+age 1-2: +3
+age 3-5: +2
+age 6-9: +1
+age 10-12: +0 (1 half-life)
+Plutonium - very rare, usually made by enriching uranium, used in high-output reactors
+primordial plutonium-244 exists in small quantities on very young planets:
+age 1: 0
+age 2: -10 (15 half-lives)
+age 3-12: no plutonium
+Tritium - uncommon, mainly refined through neutron catalyzation from deuterium (also uncommon), used in fusion reactors together with deuterium, and thermonuclear bombs
+Helium-3 - very rare on terrestrial planets, uncommon on small moons, common in gas giants, used as a non-radioactive alternative to tritium in fusion reactors
+Iridium - very rare and unevenly dispersed (mostly found in cold, young planets), used in the construction of advanced casings for fusion reactors and plasma weapons, and photon computers. its rarity and simultaneous necessity means iridium wars are long and very bloody, often consuming more iridium than exists in the planets fought over
+Caesium - rare, extremely reactive alkali metal used in explosive armor and various low-temperature alloys
+Titanium - uncommon, used in the construction of advanced casings as an alloy with iridium, and the hulls of lightweight sublight spacecraft
+Antimatter - very rare, generated in stars and can only be kept in special containers. used for powerful bombs and high-density batteries
+Germanium - uncommon, used in high-performance computers and quantum computers
+Tungsten Carbide - synthesized from uncommon tungsten and uncommon graphite, used in super-high temperature devices and containers, such as pressurized autoclaves
+-- Tech 17-25 strategic materials --
+Neutronium - common in neutron stars, extremely rare elsewhere, used in passive gravity generators due to high density (min tech 17)
+Electronium - synthesized using special protonizers (regular ones generate hydrogen) from neutronium, used in electric monopoles (min tech 17)
+Dark Matter - common between rims, rare elsewhere, used for jump-drive stabilizers, also it's not what you think it is (min tech 19)
+Luminal Fiber - manufactured from iridium, germanium and europium, used in the transmitting elements of high-end photon computers (min tech 17, Photon Computer IV+), lower-level photon computers use germanium alone
+Luminal Processor - manufactured from iridium, silicon and germanium, used in the core of high-end photon computers (min tech 17, Photon Computer IV+)
+Graphene - extremely rare in nature, can be produced from graphite or purified anthracite in nanomaterial factories, used in large-scale structures for structural support (min tech 19)
+Critical Iron - iron that acts both as solid and liquid, found in cores of iron and iron-silicate planets, used in thermal reversers, neutronium drivers and energy cloaks, can only be stored in pressurized autoclaves (min tech 21)
+Grey Goo - a silicon-based self-replicating nanobot used in replicator missiles and nanorobotic WMDs, made from atomic-scale electronic circuits (min tech 19)
+Spatial Matter - otherwise known as negative mass or exotic matter and created in ultrastability reactors from hydrogen, spatial matter dynamically attracts and repels space-time as needed, the core component in wormholes (min tech 24)
+-- Tech 25-32 strategic materials --
+Photonium - concentrated, self-attracting light, used for high-sensitivity radars and reflective-class shields, created in ultrastability reactors (min tech 25)
+Neutral Matter - a third state of matter in contrast to matter and antimatter, neutral matter has mass but no reactive properties, only affected by high-power direct energy emission, which turns it into hydrogen and positronium, used in linear energy cannons, planet smashers, antimatter shields and other extreme WMDs (min tech 28)
+-- Tech 32-40 strategic materials --
+Computronium - a material capable of pure computation, made using quark assemblers and quantum boundary reactors, used in Matrioshka brains and smaller classes of super-brains (min tech 32)
+Zero-Point Energy - vast amount of vacuum energy extracted by Omega Refineries tuned for exotic matter, used in all vacuum-energy devices as a core component, and as a massive power source for high-tier FTL drives. careless extraction may result in the formation of a false vacuum, which may cause enormous damage if accidentally triggered by an energy burst (min tech 33)
+Tesseractial Carbon - a four-dimensional form of carbon, capable of making advanced spatio-electrical fields. made as a byproduct of polydimensional drives (min tech 37)
+
+-- tech levels in general --
+the year after the age name is merely for reference for a theoretical Earth-like technological development (there's absolutely nowhere in the known galaxy right now with tech 41!), absent of any events that would regress them
+the names for tech levels above 32 is conjectural and based on expected trends (in lore)
+1000 years per tech level is merely a placeholder, the periods between each tech level may be much higher or lower, some scientists theorize that the whole Multiversal Age may last only 100 years, and the Age of Ascension may take place in just 1 year
+Beyond happening at tech 66+ is a very uncertain guess, it could be much higher or a lot lower, the only reference point is some transcendence crystals found while scavenging Khaldaarim ships!
+for a "super-hard" no-FTL WotEG, disable all FTL drives and tachyonic STL drives, move Antimatter Thruster to tech 15, Luminal Thruster to 17 and Blueshift Thruster to 20, and max tech level is 25
+once a new tier of FTL drive is invented, the tier below it receives one last upgrade to max level 9 (so a warp 5-6 drive at tech 16 can be upgraded to warp 5-9 at tech 17), making it useful for outdated ships that cannot accept higher-tier FTL drives but have enough power to support a higher-level FTL drive of the same tier
+tech levels for ships are not actually hard limits; Frosthaven mostly uses huge, but low-tech (tech 14-15) ships in the 150K-200K tonne range, together with a small amount of high-tech (tech 17) ships in the 2000-5000 tonne range
+
+1 - Bronze Age (3000 BCE-1000 BCE)
+engineering - Bronze Tools, Temple, Ancient Farm, Ancient Fort, Bronze-age City (100,000)
+transport - Horse Carriage
+military - Swordsman, Skirmisher, Archer, Missile Cavalry
+government - Ancient Monarchy, Theocracy
+
+2 - Iron Age (1000 BCE-500 BCE)
+engineering - Iron Tools, Iron-age City (250,000)
+military - Melee Cavalry, Phalanx, Spearman
+government - Early Republic
+
+3 - Classical (500 BCE-500 CE)
+engineering - Early Fort, Classical City (1,000,000)
+transport - Courier
+military - Shock Cavalry, Legionary, Ballista
+government - Classical Republic, Early Empire
+
+4 - Early Medieval (500-1200)
+engineering - Lifting Crane
+military - Knight, Cataphract
+government - Merchant Republic, Feudal Monarchy
+
+5 - Late Medieval/Renaissance (1200-1500)
+engineering - Medieval Fort, Medieval City (1,000,000)
+military - Early Cannon, Arquebusier
+
+6 - Gunpowder Age (1500-1650)
+engineering - Star Fort, Early Seaport
+transport - Caravel
+military - Musketman, Heavy Cannon
+
+7 - Enlightenment (1650-1750)
+engineering - Water Mill, Deep-Cave Mines, Late Land Fort
+transport - Clipper Sailship, Steam Carriage
+military - Flintlock Rifle, Limber Cannon
+
+8 - (Early) Industrial Age (1750-1900)
+engineering - Coal Power Plant, Basic Factory, Industrial City (5,000,000)
+transport - Steamship, Zeppelin, Steam Train
+military - Industrial Cannon, Bolt-action Rifle, Machine Gun
+government - Absolute Monarchy, Industrial Republic (Liberalism/Conservatism/Socialism)
+
+9 - Modern Age/Late Industrial Age (1900-1940) | Trav 6-7
+engineering - Oil Power Plant, Oil Refinery, Plastic Factory, Vacuum Tube Computer, Airport I, Seaport I, Modern City (10,000,000), Early Genetics
+transport - Basic Automobile, Electric Train, Passenger Bus, Cargo Vehicle, Early Rocket (STL I, 8 km/s)
+military -  Early Fighter, Early Bomber, Naval Battleship, Early Tank
+government - Modern Republic (Liberal Capitalism/Liberal Socialism/Authoritarian + Industrial Republic ideologies), Socialist Republic (Socialism/Marxism-Leninism), Military Dictatorship (Augustian Fascism/Elvonin Fascism/Authoritarian/Stratocracy/Monarchism) 
+
+10/A - Atomic Age (1940-1990) | Trav 8
+engineering - Fission Power Plant, Solar Plant, Wind Turbine, Polymer Factory, Early Transistor Computer, IC Computer I, Airport II, Seaport II, Space Colony I, Atomic City (30,000,000), Early Robot, Modern Farm
+transport - Automobile I, High-Speed Train, Cruise Ship, Orbital Rocket (STL II, 20 km/s)
+military - Anti-Aircraft Gun I, Jet Fighter, Jet Bomber, Nuclear Battleship, Fission Bomb, Cold War Tank, Laser Gun, ICBM
+government - Modern Federation (Modern Republic ideologies), Surveillance State (Military Dictatorship ideologies)
+
+11/B - Information Age (1990-2100) | Trav 9 | we are here!
+engineering - Fusion Power Plant, Thorium Reactor, Nanotech Facility, Advanced Materials Factory, IC Computer II, Quantum Computer I, Airport III, Seaport III, Spaceport I, Space Colony II, Artificial Intelligence I, Megacity I (100,000,000), Robotics I, Modern Genetics, Hydroponic Farm I, Advanced Medicine (lifespan +25%)
+transport - Automobile II, Maglev Train, Ion Rocket (STL III, 200 km/s), Generation Ship, Prototype Warp Drive (Warp 1), Space Station I
+military - Anti-Aircraft Gun II, Hypersonic Fighter, Supersonic Bomber, Fusion Bomb, Megawatt Laser, Information-age Tank, Electric Gun, Railgun I, Laser Defense, Hypersonic Missile I, Composite Armor
+government - Digital Democracy (Modern Republic ideologies), Global Commune (Socialist Republic ideologies), Orwellian Dictatorship (Military Dictatorship ideologies)
+
+12/C - Warp Age (2100-2250) | Trav 10/A
+engineering - Space Elevator, Magnetic Thruster, O'Neill Cylinder, Quantum Accelerator, IC Computer III, Quantum Computer II, Artificial General Intelligence, Spaceport II, Space Colony III, Terraforming I, Megacity II (500,000,000), Space Station II, Robotics II, Hydroponic Farm II
+transport - Warp 2, Warp 3, Vacuum Train, Plasma Rocket (STL IV, 1,000 km/s)
+military - Anti-Aircraft Gun III, Star Fighter, Space Corvette, Space Frigate, Space Destroyer, Plasma Bomb, Deep-Tunnel Missiles, Hypersonic Missile II, Anti-Vehicle Laser, Early Energy Shield, Troop Enhancement
+government - Stellar Republic (Modern Republic + Socialist Republic ideologies), Interstellar Imperium (Military Dictatorship + Monarchism ideologies)
+
+13/D - Early Hyper Age (2350) | Trav 11/B - Kardashev I
+engineering - Fusion Refinery, Interplanetary Logistics Network, Boosted Fusion Plant, Plutonium Reactor, Photon Computer I, Quantum Computer III, Spaceport III, Space Station III, Megacity III (1,000,000,000), Robotics III, System-scale Radar, Accelerated Food Farm, Genetic Self-Repair (lifespan +50%), Robotic Superlimbs
+transport - Hyperlane 1-2, Warp 4, Fusion Thruster (STL V, 30,000 km/s), Automated Flight Planner
+military - Small Antimatter Bomb, Relativistic Missile I, Interplanetary Flak Cannon, EMP Bomb, Gigawatt Laser, Ion Cannon I, Energy Shield I, Nanomesh Armor, Prototype Energy Cloak, Cybernetic Implants
+
+14/E - Late Hyper Age (2450) | Trav 12/C
+engineering - Megacity IV (5,000,000,000), Microwave Solar Array I, Space Colony IV, Photon Computer II, Quantum Computer IV, Planetary Spaceport I, Space Fort I, Small-scale Reality Replication, Frontier Radar
+transport - Hyperlane 1-6, Warp 5-1
+military - Space Monitor, Light Cruiser, Mech Walker I, Relativistic Missile II, Electric Cannon, Wide-spectrum Laser, Energy Shield II, Polymer Armor, Laser Point Defense
+
+15/F - Early Jump Age (2700) | Trav 13/D
+engineering - Megacity V (10,000,000,000), Antimatter Refinery, Atomic Materials, Photon Computer III, Planetary Spaceport II, Active Food Farm, Rejuvenescence Therapy (lifespan +100%)
+transport - Hyperlane 2-1, Warp 5-4, Jump 1-2
+military - Heavy Cruiser, Medium Antimatter Bomb, Tesla Cannon, Relativistic Cannon I, Ion Cannon II, Plasma Cannon I, Energy Shield III, Mass Psychological Interference
+
+16/G - Late Jump Age (3000) | Trav 14/E
+engineering - Antigravity Field, Deep-crust Mining, Iridium Alloy Formation, Space Fort II, High-temperature Materials
+transport - Hyperlane 2-3, Warp 5-6, Jump 1-6
+military - Relativistic Cannon II, Replicator Missile I, Plasma Shield I, Cryocannon I
+
+17/H - Early Sentient Age (3300) | Trav 15/F
+engineering - Antimatter Reactor, Microwave Solar Array II, Megacity VI (50,000,000,000), Monopole Structure, Artificial Superintelligence, Photon Computer IV, Planetary Spaceport III, Artificial Magnetic Field, Artificial Gravity, Super-nutrient Farm, Superspace Light Network (Tier 8-6 communication)
+transport - Hyperlane 2-6, Warp 6-1, Jump 2-2, Antimatter Thruster (STL VI, 150,000 km/s, -20% aging to crew)
+military - Light Battleship, Relativistic Missile III, Terawatt Laser, Plasma Shield II, Cryocannon II, Antimatter Gun I, Relativistic Cannon III, Energy Cloak I, Electromagnetic Incinerator, Plasma Cannon II
+government - Machine State (Hivemind)
+
+18/I - Mid Sentient Age (3500) | Trav 16/G
+engineering - Planetary Shield, Massive Microwave Arrays, Space Fort III, Stellar Spaceport I, Interstellar Radar, Deep-Level Signals, Spatial Stabilization, Small-scale Matter Replication, Telomere Stabilization (lifespan +150%)
+transport - Hyperlane 3-2, Warp 6-3, Jump 2-6, Static Maneuver Thruster, Interstellar Routes
+military - Clone Army I, Ultra-focus Laser, Multilayer Armor, Electric Shield, Holz Cannon (Tesla Cannon on steroids), Ion Cannon III, Brainwash Wave Gun
+
+19/J - Mid-late Sentient Age (4000) | Trav 17/H
+engineering - Megacity VII (200B), Planetary Shield Ring, Mantle Mining, Computing Framework, Planet-scale Reality Replication
+transport - Hyperlane 3-6, Warp 6-4, Jump 3-2
+military - Heavy Battleship, AI Vessel, Replicator Missile II, Antimatter Gun II, Petawatt Laser, Cryocannon III
+
+20/K - Late Sentient Age (4400) | Trav 17/H
+engineering - Bishop Ring, Megacity VIII (1000B), Planetary Particle Accelerator, Stellar Spaceport II, Planetary Spaceport IV, Photon Computer V, Fusion-accelerated Farm, Metasentient Computer Brain
+transport - Hyperlane 4-1, Warp 6-6, Jump 3-6, Luminal Thruster (STL VII, 290,000 km/s, -90% aging to crew)
+military - Dreadnought (250,000 t), Clone Army II, Energy Cloak II, Plasma Shield III, High-voltage Shield, Indoctrination Network, Ion Cannon IV
+
+21/L - Early Stellar Age (5000) | Trav 18/J
+engineering - Space Fort IV, Planetary Shield Network, Deep-core Mining, Interstellar Logistics Network, Bounce Space Network (Tier 10-6 communication)
+transport - Hyperlane 4-3, Warp 7-1, Jump 4-1
+military - Super-dreadnought (1,000,000 t), Exawatt Laser, IR Cloak I, Planetary Thermal Sterilizer, Neutronium Mass Driver
+
+22/M - Mid Stellar Age (6000)
+engineering - McKendree Cylinder, Small Starlifter, Cold Fusion Reactor (removes fusion size limitations), Thermal Reverser, Megacity IX (10T), Human-scale Matter Replication, Matter Youth Restorer (lifespan +250%)
+transport - Hyperlane 4-4, Warp 7-4, Jump 4-3
+military - Ultra-dreadnought (10,000,000 t), Antimatter Gun III, Energy Cloak III, Hyperlane Disruptor I, Repulsive Armor
+
+23/N - Late Stellar Age (7000)
+engineering - Stellar Spaceport III, Ultrastability Reactor, Interstellar Habitation System, Gravitational Lane, Photon Computer VI, Multi-Compression Network (Tier 12-6 communication)
+transport - Hyperlane 4-6, Warp 7-6, Jump 4-6
+military - IR Cloak II, Warp Breach I, Hawking Cannon (enormously powerful Holz Cannon), Gamma Laser, Plasma Shield IV
+
+24/O - Early Wormhole Age (8000) - Kardashev II
+engineering - Medium Starlifter, Megacity X (unlimited), Solar Habitat, Intrasystem Wormhole, Dimensional Computer I, Synthesis Medicine (lifespan +400%)
+transport - Hyperlane 5-1, Warp 8-1, Jump 5-1, Wormhole 1, Blueshift Thruster (STL VIII, 299,000 km/s, -99% aging to crew)
+military - Colossal Dreadnought (500,000,000 t), Replicator Missile III, Zettawatt Laser
+
+25/P - Mid Wormhole Age (9200)
+engineering - Small Shellworld (<5000 km), Compressed Fusion Reactor, Dimensional Computer II, Galactic Radar, Dynamic-flow Machine, Automated Spaceship Factory
+transport - Hyperlane 5-3, Warp 8-4, Jump 5-3, Wormhole 2
+military - Antimatter Gun V, Neutron Armor, Reflective Shield I, Multilayer Jump Suppressor, Warp Breach II
+
+26/Q - Late Wormhole Age (11000)
+engineering - Small-mid Shellworld (<13,000 km), Planet-scale Megahabitat, Stellar Spaceport IV, Large Starlifter, Stellar Particle Accelerator, Asteroid-scale Matter Replication
+transport - Hyperlane 5-6, Warp 8-6, Jump 5-6, Wormhole 3, Multi-Warp Sequencer
+military - Hyperlane Disruptor II, Kugelblitz Mirror, IR Cloak III, Ragnarok Cannon (Hawking Cannon to 11), Antimatter Missile
+
+27/R - Early Mega Age (12000)
+engineering - Mid Shellworld (<30,000 km), Large Shellworld (<200,000 km), Dimensional Computer III, Ergosphere Collector, Meta-Wormhole Network (Tier 13-6 communication)
+transport - Hyperlane 6-1, Warp 9-1, Jump 6-1, Wormhole 4
+military - Megascale Dreadnought (2,000,000,000 t), Anti-wormhole Generator, Nullifier Cannon
+
+28/S - Mid Mega Age (14000)
+(Tech 28 was the maximum tech readily available in the Second Empire before its collapse (27301 CE/5976 SE), mainly in current Khaldaar territory)
+engineering - Huge Shellworld (200,000-1,000,000 km), Three-State Theory, Quark Assembler, Galactic Spaceport I, Stellar Spaceport V
+transport - Hyperlane 6-2, Warp 9-3, Jump 6-3, Wormhole 5
+military - Reflective Shield II, Multi-mirror Accelerator, Reformation Armor, Linear Energy Cannon
+
+29/T - Late Mega Age (15500)
+(Tech 29 was the absolute edge of known technology in the Second Empire (27301 CE/5976 SE))
+engineering - Dyson Swarm, Shkadov Thruster (always STL), Quantum Boundary Reactor, Firegate Network (Tier 15-6 communication), Chronodynamics Theory
+transport - Hyperlane 6-4, Warp 9-4, Jump 6-6, Wormhole 6-2, Boundary Thruster (STL IX, 299,792 km/s, -100% aging to crew)
+military - Antimatter Gun VI, Replicator Missile IV, Planet Smasher, Antimatter Shield I
+
+30/U - Early Galactic Age (16500)
+engineering - Intergalactic Radar, Dimensional Computer IV, Galactic Spaceport II, Terraforming VI
+transport - Hyperlane 6-6, Warp 9-6, Jump 7-1, Wormhole 6-6, Black Hole Ship
+military - Gravitational Negation Cannon, Neutrino Laser, Neutral Matter Gun I, Planet Ship, Light Cloak I
+government - Galactic Federation (Stellar Republic ideologies), Galactic Empire (Interstellar Imperium ideologies)
+
+31/V - Mid Galactic Age (17000)
+engineering - Small Ringworld, Jupiter Brain, Virtual Particle Disassembler
+transport - Hyperlane 7-1, Warp 10-1, Jump 7-3, Wormhole 7-2
+military - 4D Shield I, Superluminal Missile I, Pocket Nova Cannon
+
+32/W - Late Galactic Age (18000)
+(Tech 32 is the maximum level of readily understood technologies)
+engineering - Dyson Sphere, Matrioshka Brain, Intergalactic Transport Network, Omega Refinery, Medium Ringworld, Local Temporal Decelerator
+transport - Hyperlane 7-3, Warp 10-3, Jump 7-6, Wormhole 7-6
+military - Star Beam I (Nicoll-Dyson beam), Antimatter Gun VII, Replicator Missile V, 4D Shield II, Quantum Armor
+
+33/X - Early Vacuum Age (19000)
+engineering - Large Ringworld, Void Material Extractor
+transport - Hyperlane 7-4, Warp 10-4, Jump 8-1, Wormhole 8-1
+military - Vacuum Gun I, Superluminal Missile I, Neutral Matter Gun II
+
+34/Y - Mid Vacuum Age (20000)
+engineering - Spatial Vacuum Reactor, Penrose Sphere, Planet-scale Matter Replication
+transport - Hyperlane 7-6, Warp 10-6, Jump 8-3, Wormhole 8-3, Tachyon Thruster (STL X, 1,000,000 km/s, -200% aging to crew, until age 20 (they get younger!))
+military - Stellar Ship (a ship around a star), Penrose Cannon
+
+35/Z - Late Vacuum Age (21000)
+transport - Hyperlane 8-1, Warp 11-1, Jump 8-6, Wormhole 8-6
+
+36/a - Early Cluster Age (22500) - Kardashev III
+transport - Hyperlane 8-3, Warp 11-3, Jump 9-1, Wormhole 9-1
+
+37/b - Mid Cluster Age (24000)
+transport - Hyperlane 8-6, Warp 11-4, Jump 9-3, Wormhole 9-3
+
+38/c - Late Cluster Age (26000)
+engineering - Alderson Disk
+transport - Hyperlane 9-1, Warp 11-6, Jump 9-6, Wormhole 9-6
+
+39/d - Early Intergalactic Age (28000)
+transport - Hyperlane 9-3, Warp 12-1, Jump 10-1, Wormhole 10-1, Layerspace Drive (STL XI, 10,000,000 km/s, -200% aging to crew, until age 20 (they get younger!))
+
+40/e - Mid Intergalactic Age (30000)
+transport - Hyperlane 9-6, Warp 12-3, Jump 10-3, Wormhole 10-3
+
+41/f - Late Intergalactic Age (32000)
+engineering - Birch Planet, Matter-Energy Conversion
+transport - Hyperlane 10-1, Warp 12-4, Jump 10-6, Wormhole 10-6
+
+42/g - Early Dimensional Age (33000)
+transport - Hyperlane 10-3, Warp 12-6, Jump 11-1, Wormhole 11-1, Dimensional Drive (STL XII, 100M km/s, -200% aging to crew, until age 20 (they get younger!))
+military - Quasar Gun
+government - Transcendent State (Eternal Utopia ideology)
+
+43/h - Mid Dimensional Age (34000)
+engineering - Maximum Birch Planet
+transport - Hyperlane 10-6, Warp 13-1, Jump 11-3, Wormhole 11-3
+
+44/i - Late Dimensional Age (35000)
+transport - Hyperlane 11-1, Warp 13-3, Jump 11-4, Wormhole 11-4
+
+45/j - Early Supercluster Age (36000)
+transport - Hyperlane 11-3, Warp 13-6, Jump 11-6, Wormhole 11-6, Ultraphoton Drive (STL XIII, 1B km/s/3,300 c, -200% aging to crew, until age 20 (they get younger!))
+
+46/k - Mid Supercluster Age (37000)
+transport - Hyperlane 11-6, Warp 14-3, Jump 12-1, Wormhole 12-1
+
+47/l - Late Supercluster Age (38000)
+transport - Hyperlane 12-1, Warp 14-3, Jump 12-3, Wormhole 12-3
+
+48/m - Early Reality Age (39000)
+military - Negative Temperature Laser
+transport - Hyperlane 12-3, Warp 14-4, Jump 12-4, Wormhole 12-6, Reality Drive (STL XIV, 10B km/s/33,000c, -200% aging to crew, until age 20 (they get younger!))
+
+49/n - Mid Reality Age (40000)
+transport - Hyperlane 12-6, Warp 14-6, Jump 12-6, Wormhole 13-1
+
+50/o - Late Reality Age (41000)
+transport - Hyperlane 13-1, Warp 15-1, Jump 13-1, Wormhole 13-3
+
+51/p - Early Origin Age (42000)
+transport - Hyperlane 13-3, Warp 15-3, Jump 13-3, Wormhole 13-6
+
+52/q - Mid Origin Age (43000)
+transport - Hyperlane 13-6, Warp 15-4, Jump 13-4, Wormhole 14-1, Singularity Drive (STL XV, 50B km/s/165K c, -200% aging to crew, until age 20 (they get younger!))
+
+53/r - Late Origin Age (44000)
+transport - Hyperlane 14-1, Warp 15-6, Jump 13-6, Wormhole 14-3
+
+54/s - Early Universal Age (45000) - Kardashev IV
+transport - Hyperlane 14-3, Warp 16-1, Jump 14-1, Wormhole 14-6
+
+55/t - Mid Universal Age (46000)
+transport - Hyperlane 14-6, Warp 16-3, Jump 14-3, Wormhole 15-1
+
+56/u - Late Universal Age (47000)
+transport - Hyperlane 15-1, Warp 16-4, Jump 14-4, Wormhole 15-3, Eternity Drive (STL XVI, 500B km/s/1650K c, -200% aging to crew, until age 20 (they get younger!))
+
+57/v - Early Superreality Age (48000)
+transport - Hyperlane 15-3, Warp 16-6, Jump 14-6, Wormhole 15-6
+government - Singularity State (Eternal Utopia ideology)
+
+58/w - Mid Superreality Age (49000)
+transport - Hyperlane 15-4, Warp 17-1, Jump 15-1, Wormhole 16-1
+
+59/x - Late Superreality Age (50000)
+transport - Hyperlane 15-6, Warp 17-3, Jump 15-3, Wormhole 16-3, Divine Drive (STL XVII, 5T km/s/16.5M c, -200% aging to crew, until age 20 (they get younger!))
+
+60/y - Early Multiversal Age (51000) - Kardashev V
+transport - Hyperlane 16-1, Warp 17-6, Jump 15-6, Wormhole 16-6
+
+61/z - Mid Multiversal Age (52000)
+transport - Hyperlane 16-3, Warp 18-1, Wormhole 17-1
+
+62/α - Late Multiversal Age (53000) - Kardashev VI
+transport - Hyperlane 16-6, Warp 18-4, Wormhole 17-3
+
+63-65/ω - Age of Ascension (???) - Kardashev VII-VIII
+engineering - Ascension Framework, Hyperdimensional Structure, Null Energy Towers, Local Time Travel, Terraforming Ω (all extremely speculative!)
+transport - Warp 19-4, Wormhole 18-3, Realm Transcension?, Oblivion Drive (STL XVIII, 500T km/s/1650M c, -200% aging to crew, until age 20 (they get younger!))
+military - Oblivion Machine
+government - Divine Realm (Eternal Utopia ideology)
+
+66+/Ω - Beyond (???)
+engineering - who knows what you can do in the afterlife?
+transport - we have no idea, other than Warp 20-1 (tech 67 exp.) to Warp 20-6 (tech 69 exp.), Infinity Drive (STL XIX, unlimited speed)
+military - this civilization has transcended beyond the need for a military
+government - Heavenly Mandate (this civilization has transcended beyond the need for an ideology)
+
+- brief tech timeline (Third Empire, TE/CE-31424 years) -
+-28938 TE/2486 CE: Capilia is founded by the First Empire, at tech 13
+-28652 TE/2772 CE: Capilia reaches tech 14
+-28274 TE/3150 CE: Capilia is at tech 15, First Empire collapses
+...
+-4807 TE: Capilia is at tech 26, start of Second Empire collapse
+-4795 TE: Capilia reaches tech 27, formation of Capilian Democratic Republic
+-4778 TE: Capilia falls to tech 26 due to disintegration of interstellar trade
+-4752 TE: Capilia falls to tech 25, the Collapse goes into full swing
+-4725 TE: Capilia falls to tech 24 due to disintegration of interstellar trade
+-4706 TE: Capilia falls to tech 22, the Collapse's direct effects hit Capilia
+-4629 TE: Capilia falls to tech 19, final catastrophic phase of the Collapse
+-4578 TE: Capilia falls to tech 17, dissolution of Capilian Democratic Republic
+-4538 TE: Capilia falls to tech 15, the Great Scouring begins galaxy-wide
+-4480 TE: Capilia falls to low of tech 12, end of the Collapse and beginning of Second Interregnum
+-4126 TE: Capilia re-achieves tech 13
+...
+0 TE: Capilia is at tech 13, beginning of Third Empire
+448 TE: Capilia reaches tech 14
+590 TE: Capilia reaches tech 15
+660 TE: Capilia reaches tech 16
+684 TE: Capilia is at tech 16, current milleu
+(692 TE): Capilia reaches tech 17 due to Imperial arms race with Khaldaar, First Galactic War
+(718 TE): Capilia reaches tech 18 due to Imperial arms race
+(751 TE): Capilia reaches tech 19 due to Imperial arms race
+(780 TE): Capilia reaches tech 20 due to Imperial arms race
+(816 TE): Capilia reaches tech 21 before high research costs stop the arms race
+(962 TE): Capilia reaches tech 22, Second Galactic War
+(978 TE): End of Second Galactic War, Khaldaar occupies tailward frontier regions
+(989 TE): Beginning of Asterian Civil War
+(1003 TE): End of Asterian Civil War, Capilia falls to tech 19 due to war-induced devastation
+(1026 TE): Capilia re-achieves tech 20 during the Phoenix Resurrection
+(1049 TE): Capilia re-achieves tech 21
+(1070 TE): Capilia re-achieves tech 22
+(1110 TE): Capilia reaches tech 23
+...
+(4973 TE): Capilia is at tech 30, in the Fourth Empire
+(5001 TE): Capilia reaches tech 31, Great Galactic War
+(5064 TE): Capilia is destroyed by a Neo-Enaarim planet smasher
+
+-- Terraforming tech --
+
+Terraforming I (Tech 12) can terraform planets 1-2 temp difference from ideal, and 1-2 atm difference from ideal, as well as introduce plant and animal life
+Terraforming II (Tech 14) can terraform planets up to 3 temp difference from ideal, and 6 atm below and 3 atm above difference from ideal, Mars can be terraformed using Terraforming II
+Terraforming III (Planetary Makeup) (Tech 18) can perform minor reconstructions of otherwise unsuitable planets, allowing cheaper and simpler terraforming methods to possibly be used, Venus can be terraformed using Terraforming III
+Terraforming IV (Planetary Overhaul) (Tech 22) can reconstruct the crust and sometimes mantle of otherwise unsuitable planets, as well as shift planets into more favorable orbits, allowing cheaper methods to be used
+Terraforming V (Planetary Reconstruction) (Tech 27) can totally rebuild planets to fix fatal issues that prevent any colonization in conjunction with cheaper terraforming methods
+Terraforming VI (Planetary Design) (Tech 30) in theory can design ideal planets from scratch, even where there are no planets in the solar system. this is the peak of terraforming, as structures capable of housing a lot more people become available around this time
+Terraforming VII (Stellar Genesis) (Tech 36) can create entire solar systems using enormous vacuum energy and energy-matter conversion, but massive improvements in habitation technology make this mostly a technology of scientific curiosity
+Terraforming VIII (Galactosynthesis) (Tech 41) can create whole galaxies using vast quantities of zero-point power, at tech 41 it is only capable of making galaxies ~2,000 ly across, but by tech 45 it can make galaxies around Milky Way size (~150,000 ly)
+Terraforming IX (Mini Universizer) (Tech 50) can create bubbles of altered reality, allowing a highly advantageous strategic position, or just safe research of differing universal conditions
+Terraforming X (Reality Generator) (Tech 57) manipulates the basic framework of dimensionality to create anything from a new layer of reality to whole new universes, using unlimited energy
+Terraforming Ω (Eternity Machine) (Age of Ascension) one of the discoveries that lead to the Ascension and eventually Beyond, the Eternity Machine can generate any level of universe, multiverse or any layerverse above them, any dimension and any reality imaginable, there is nothing beyond this
+
+-- Example star systems: --
+
+Star The One (S-50-50-50-0001) (G-class, age 5), capital of Federation of Dahanno
+Habitable planets:
+Dahanno (iron-silicate, terrestrial, size 12 (C), temp 10, grav 1.0g, atm 10 N2/O2, water 6, life 20, tech 16, pop 10-4 (40 billion), economy Advanced Materials, main species Humans (Homo sapiens sapiens), Elves (Homo sapiens khaldaarus)) - CAPITAL
+Lyerre (iron-silicate, terrestrial, size 15 (F), temp 10, grav 1.1g, atm 10 N2/O2, water 5, life 20, tech 10, pop 9-6 (6 billion), economy Aviation, main species Lyerran raven (Corvus corax lyerranus)) - protected planet, special permit from sector-level government required to visit
+
+Star Asteron (S-51-76-56-0112) (G-class, age 5), capital of the Third Empire
+Habitable planets:
+Capilia (iron-silicate, terrestrial, size 11 (B), temp 10, grav 0.9g, atm 10 N2/O2, water 7, life 16, tech 16, pop 11-2 (200 billion), economy Administration, main species Humans (Homo sapiens sapiens))
+
+Star Laanthil (S-64-28-33-0004) (G-class, age 6), capital of the Empire of Khaldaar
+Habitable planets:
+Veleth Yarthel (iron-silicate, terrestrial, size 13 (D), temp 9, grav 1.0g, atm 10 N2/O2, water 6, life 16, tech 17, pop 11-2 (200 billion), economy Nuclear Fusion, main species Elves (Homo sapiens khaldaarus))
+
+Star Zvezda (S-32-46-(42)-0292) (K-class, age 10), capital of Frosthaven People's Republic
+Habitable planets:
+Polyara (iron-silicate, terrestrial, size 12 (C), temp 9, grav 1.0g, atm 10 N2/O2, water 6, life 15, tech 16, pop 10-5 (50 billion), economy Iridium Refining, main species Humans (Homo sapiens sapiens)
+
+for a "convenient" planet code ripped off in the style of Traveller: Dahanno ACAAAN6-KGA
+A (A - iron-silicate, I - iron, S - silicate, C - water, G - gas planet)
+D (6 - 6000 km, D - 13,000 km, K - 20,000 km)
+A (1 - <45 K, A - 280-300 K, K - >750 K)
+A (1 - 0.1 g, A - 1 g, K - 2 g)
+A (1 - <0.05 atm, K - >60 atm)
+N (N - nitrogen-oxygen, A - argon-oxygen, C - carbon-oxygen)
+6 (0 - no water, A - 95% water, K - 100% >30 km min)
+
+G (0 - no life, G - peak terrestrial, K - native civilization)
+H (1 - Bronze Age, H - Tech 17, T - Mid Mega Age (max Second Empire), Z - Tech 35, z - Tech 61 (near max), α - Tech 62, ω - Age of Ascension, Ω - Beyond)
+B (2 - 100s, C - trillions, F - quadrillions, I - quintillions)
+
+(I can't visualize a 3d galaxy map in 2d, ignore the 3rd dimension from now, damnit, use the 3d version of WotEG at your own risk!)
+Capitals: Federation of Dahanno: The One (S-50-50-0001) - Dahanno ACAAAN6-KGA (40 billion)
+Empire of Khaldaar: Laanthil (S-64-28-0004) - Veleth Yarthel AD9AAN6-GHB (200 billion)
+Third Empire of Asteria: Asteron (S-51-76-0112) - Capilia ABA9AN7-GGB (200 billion)
+Republic of Caisther: Blauerwald (S-62-39-0016) - Neureich SDA9AN6-GFA (70 billion)
+State of Raaka: Narraaka (S-58-43-0002) - Vaskana ACAAAN7-GGC (1 trillion, 10% of Raaka's population in 32108, and most populous planet in the Known Galaxy)
+Elvonin Federation: Quanrayl (S-47-37-0033) - Elvonia ABA99N5-FGA (50 billion)
+Frosthaven People's Republic: Zvezda (S-32-46-0292) - Polyara AC9AAN6-FGA (50 billion)
+Kingdom of Xapaloto: Azteca (S-32-34-0065) - Tenochitlan ACAAAN7-GFB (100 billion)
+Stellar Republic of Caranetia: Hanthora (S-26-20-0001) - Nal Qar'aan AE9BAA8-GGB (200 billion)
+
+Second Empire (in 32108): Veyltaren (S-61-31-0166) - Veleth Anithan ABAA9N7-GF9 (3 billion)
+Second Empire (in 27301/5976 SE): Heart of the Empire (S-61-31-0166) - Capital ABAA9N7-GTC (4 trillion)
+
+-- a full, example solar system --
+for once, I've developed enough of the basic star system generation to generate a solar system! everything is left to RNG... except for name, good luck!
+check wotecinspacesystem.txt
+
+-- Quick empire overviews --
+
+GDP in 1990 CE standard dollars (= 2.24 2020$, 8.44 2050$)
+
+--Empire of Khaldaar-- (Kayvaaleha Khaldaar)
+Number of sectors: 1,048 (602 direct, 445 frontier)
+Population: 62.88 trillion (62,880,000 million), avg 200M per star
+Average tech: 15 (Early Jump Age)
+Maximum tech: 18 (Mid Sentient Age)
+Capital: Laanthil (S-64-28-0004) - Veleth Yarthel AD9AAN6-GHB (200 billion)
+Leader: [Empress/Kayvaaltha] Caenyel re Lerathel/Kael Lerathel
+Heir: [Crown Prince/Veyaaltha] Arayel re Lerathel
+GDP: $1.824 quintillion/$29K per capita
+
+--Federation of Dahanno--
+Number of sectors: 231 (all direct)
+Population: 13.86 trillion (13,860,000 million), avg 200M per star
+Average tech: 15 (Early Jump Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: The One (S-50-50-0001) - Dahanno ACAAAN6-KGA (40 billion)
+Leader: [Sovereign] Chen Yu
+GDP: $401.9 quadrillion/$29K per capita
+
+--Empire of Asteria (the Third Empire)--
+Number of sectors: 582 (385 direct, 197 frontier)
+Population: 52.38 trillion (52,380,000 million), avg 300M per star
+Average tech: 15 (Early Jump Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: Asteron (S-51-76-0112) - Capilia ABA9AN7-GGB (200 billion)
+Leader: [Imperator] Lucius Claudius Maximus (Lucian II)/House Claudii
+Heir: [Caesar] Julia Claudia
+GDP: $1.519 quintillion/$29K per capita
+
+--Republic of Caisther--
+Number of sectors: 7 (all direct)
+Population: 1.89 trillion (1,890,000 million), avg 900M per star
+Average tech: 14 (Late Hyper Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: Blauerwald (S-62-39-0016) - Neureich SDA9AN6-GFA (70 billion)
+Leader: [Chief Minister] Alfred Lacher
+GDP: $66.15 quadrillion/$35K per capita
+
+--State of Raaka--
+Number of sectors: 33 (all direct)
+Population: 9.9 trillion (9,900,000 million), avg 1000M per star
+Average tech: 15 (Early Jump Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: Narraaka (S-58-43-0002) - Vaskana ACAAAN7-GGC (1 trillion, 10% of Raaka's population in 32108)
+GDP: $366.6 quadrillion/$37K per capita
+
+--Elvonin Federation--
+Number of sectors: 112 (all direct)
+Population: 10.08 trillion (10,080,000 million), avg 300M per star
+Average tech: 15 (Early Jump Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: Quanrayl (S-47-37-0033) - Elvonia ABA99N5-FGA (50 billion)
+Leader: [Bundeskanzler] Johann von Drattin
+GDP: $322.6 quadrillion/$32K per capita
+
+--Frosthaven People's Republic--
+Number of sectors: 220 (all direct)
+Population: 13.2 trillion (13,200,000 million), avg 200M per star
+Average tech: 14 (Late Hyper Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: Zvezda (S-32-46-0292) - Polyara AC9AAN6-FGA (50 billion)
+Leader: [President] Vasily Proklov
+GDP: $396 quadrillion/$30K per capita
+
+--Kingdom of Xapaloto--
+Number of sectors: 219 (all direct)
+Population: 16.43 trillion (16,425,000 million), avg 250M per star
+Average tech: 14 (Late Hyper Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: Azteca (S-32-34-0065) - Tenochitlan ACAAAN7-GFB (100 billion)
+Leader: [Tlatoani] Moctezuma VII
+GDP: $394.2 quadrillion/$24K per capita
+
+--Stellar Republic of Caranetia--
+Number of sectors: 227 (all direct)
+Population: 20.43 trillion (20,430,000 million), avg 300M per star
+Average tech: 15 (Early Jump Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: Hanthora (S-26-20-0001) - Nal Qar'aan AE9BAA8-GGB (200 billion)
+GDP: $572 quadrillion/$28K per capita
+
+--Second Empire (27301/5976 SE)--
+Number of sectors: 174,852 (98,554 direct, 76,298 frontier)
+Population: 104.9 quadrillion (104,911,200,000 million), avg 2000M per star
+Average tech: 23 (Late Stellar Age)
+Maximum tech: 29 (Late Mega Age)
+Capital: Heart of the Empire (S-61-31-0166) - Capital ABAA9N7-GTC (4 trillion)
+Leader: [Emperor/Empress of the Stars], succeeded by [Star Prince/Princess]
+GDP: $10.49 sextillion/$100K per capita
+
+--Second Empire (21435/110 SE)--
+Number of sectors: 184 (all direct)
+Population: 16.56 trillion (16,560,000 million), avg 300M per star
+Average tech: 13 (Early Hyper Age)
+Maximum tech: 16 (Late Jump Age)
+Capital: Heart of the Empire (S-61-31-0166) - Capital ABAA9N7-GG9 (8 billion)
+Leader: [Emperor/Empress of the Stars], succeeded by [Star Prince/Princess]
+GDP: $364.32 quadrillion/$22K per capita
+
+--Hafurn Regency--
+(claimant to Second Empire)
+Number of sectors: 109 (all direct)
+Population: 9.81 trillion (9,810,000 million), avg 300M per star
+Average tech: 15 (Early Jump Age)
+Maximum tech: 19 (Mid-late Sentient Age)
+Capital: Khauriin (S-89-32-0060) - Hafurn IAAA9N7-GJA (20 billion)
+Leader: [Emperor of the Stars] Gaesal va Hafurn (Gaesal X)
+GDP: ???
+
+-- Non-human empires --
+
+--Vintzhuuik Alliance--
+Number of sectors: 282 (all direct)
+Population: 42.3 trillion (42,300,000 million), avg 500M per star
+Dominant species: Azzhuuik (insect, Vorikho rotatus / Spinward vorihko)
+Average tech: 14 (Late Hyper Age)
+Maximum tech: 17 (Early Sentient Age)
+Capital: In'tzhuuik (S-09-35-0002) - Iuzhain ADBBAA5-KHB (300 billion)
+GDP: ???

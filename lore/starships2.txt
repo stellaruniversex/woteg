@@ -1,0 +1,76 @@
+--STARSHIPS OF THE EARLY INTERSTELLAR PERIOD--
+
+Published by the Galactic Survey Agency
+
+The first journey into other stars began in the year 2093 CE, 30,000 years before now[1], with the launch of the Maedarian State ship, the Nevanus, named after Nevanus I Ha'arn, Emperor of the Augustian Empire between 342 and 374 CE. Its construction was not, however, clean or free of problems - over 200,000 workers, mostly slaves working in Maedaria's mines and unregulated factories, died in various horrible ways, and the Nevanus took 12 years to be finished, when it was expected to take 6.
+
+However, no matter the circumstances of the Nevanus' development, it began what is now known as the Early Interstellar Period, which lasted until 2396 CE when the Stellar Federation, known to later historians as the First Empire, was founded. The Early Interstellar Period saw basic ships, slow by today's standards with a warp 3 or warp 4 drive, traverse hundreds of light years and found thousands of new colonies in various environments, from frozen wastelands to boiling infernos, from barren, lifeless frontiers to lush, tropical paradises, with 5 trillion humans[2] across 100,000 planets by 2396 CE. These are the ships that began the exploration and colonization of the Known Galaxy as we know it.
+
+--PRE-INTERSTELLAR SHIPS--
+Before the Nevanus, with a Warp 3-2 drive, became the first spaceship to arrive at another star system, there were already FTL ships with primitive, mostly sublight warp drives, used to travel across the solar system in a much quicker time than with chemical or ion rockets.
+
+Chernograd experimental test ship
+In the mid-2030s, the Chernograd Institute, developing on the work done on the Scholz metric, which would allow spaceships to shift into superspace if correctly calibrated, began building an experimental ship based on an Ustara-class icebreaker core, with a fiberglass-steel structural composite and an NK-36 engine for sublight propulsion.
+
+Despite several warnings by the project's developers about the miscalculated Scholz metric, making the superspace field highly unstable, the false rumors of another FTL ship of similar design being built in Elvon caused the project to be rushed greatly, removing the possibility of fixing the ship's superspace drive. On 14 July 2035, this instability formed an incredibly dangerous Dimensional Rift, which eventually vaporized everything in a 100 km radius, killing over 7 million people.
+Introduced: never (expected 2036)
+Mass: 338 t
+Max cargo: Unknown
+Tech level: 11
+FTL drive: Superspace Drive (1,000 c?)
+FTL range: Unknown
+Reactor: 1x Ustara-class naval reactor (300 MW)
+Operation crew: Unknown
+Max crew: Unknown
+Unit cost: Unknown
+
+Lyerre II exploration spaceship
+The Lyerre II was the first ship to be flown with a warp drive, though a sublight one, as part of the Distant Frontiers Program. Between 2038 and 2042, it explored the Maedar planet system, and carried the first manned expedition to the outer solar system. The Lyerre II unfortunately ended up in the crossfire of the Third Great War; a rogue Elvonin missile destroyed the All-World Station to which the ship was docked, killing everyone inside.
+Introduced: 2038
+Mass: 650 t
+Tech level: 11
+FTL drive: Sublight Warp Drive (0.3 c)
+FTL range: <1 ly
+Reactor: NUC-500 Fission (500 MW)
+Operation crew: 55
+Max crew: 55
+Unit cost: $13,800M
+
+Gorzan Expedition spaceship
+The Gorzan Expedition spaceship was an unmanned spaceship that traveled to Gorzan to thoroughly research it, in 2055. The Gorzan Expedition was the first spaceship to carry a luminal (Warp 1-1) drive.
+Introduced: 2055
+Mass: 200 t
+Tech level: 11
+FTL drive: Warp 1-1 (1 c)
+Reactor: NUC-300 Fission (300 MW)
+Operation crew: Unmanned
+Unit cost: $5,000M
+
+Nevanus interstellar spaceship
+The Nevanus was the first spaceship ever to travel to another star system, that being Kolthaar, colonizing a habitable planet named Ahladar. As stated at the beginning of this text, the Nevanus was built on a pile of hundreds of thousands of slaves, and still took 12 years to be launched.
+
+In 2097, the Maedarian State collapsed, as a brutal civil war tore the empire apart, and the remaining garrisons were stretched too thin to stop the dominions from seceding while the regular armies were busy fighting in Rekov. With the collapse of Maedaria, the colony in Ahladar was isolated, and it took another decade for more Nevanus-like ships to arrive. In the early to mid 22nd century, the population of Ahladar boomed from 2,000 to hundreds of thousands, and New Maedaria, the first interstellar state, was founded in 2154, lasting until it joined the newly formed Stellar Federation in 2396.
+Introduced: 2093
+Mass: 6,500 t
+Tech level: 12
+FTL drive: Warp 3-2 (72 c)
+FTL range: 20 ly
+Reactor: 4x BRR-5000 Breeder Reactor (20 GW)
+Operation crew: 300
+Max crew: 300
+Unit cost: $146,000M
+
+Inteprid-class star frigate
+The Inteprid-class was the first military FTL starship, used by the Stellar Republic of Dahanno to guard the nearest stars from potential alien attacks. Though no such attacks happened (a close call attack from the Stellar Toreaanet was narrowly averted in 2126), the Inteprid-class still found use in protecting newly opened trade routes from the new threat of space piracy, until the Lightsword-class replaced it in 2205.
+Introduced: 2114
+Mass: 1,200 t
+Tech level: 12
+FTL drive: Warp 3-2 (72 c)
+FTL range: 7 ly
+Reactor: 2x BRR-2000 Breeder Reactor (4000 MW)
+Operation crew: 110
+Max crew: 110
+Unit cost: $22,000M
+
+[1] This is disputed, some claim it has been only 7,000 years and 23,000 extra years have been added for propaganda reasons.
+[2] Refers both to humans (Homo sapiens sapiens) and Khaldaarim (Homo sapiens khaldaarus)
